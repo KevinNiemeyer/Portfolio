@@ -1,6 +1,6 @@
 import React from 'react';
-import Logo from './Logo';
 import styled from 'styled-components';
+import './logo-styles.css';
 import './App.css';
 
 const Container = styled.div`
@@ -9,13 +9,11 @@ const Container = styled.div`
 	position: relative;
 	display: flex;
 `;
-function Contact(props) {
+function About(props) {
 	return (
 		// Render a Thumbnail component
-		<Container>
-			<Logo />{' '}
-		</Container>
+		<div className='mustache' />
 	);
 }
 
-export default Contact;
+export default About;

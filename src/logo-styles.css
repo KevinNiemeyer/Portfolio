@@ -1,0 +1,8 @@
+.mustache {
+	width: 180px;
+	height: 180px;
+	border-radius: 50%;
+	position: absolute;
+	color: black;
+	background-color: currentColor;
+}
