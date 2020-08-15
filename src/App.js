@@ -1,7 +1,7 @@
 // App.jsx
 
 import React from 'react';
-import { BrowserRouter, Router, Switch, Route } from 'react-router-dom';
+import { HashRouter, Router, Switch, Route } from 'react-router-dom';
 import styled from 'styled-components';
 import Nav from './Nav';
 import Home from './Home.js';
@@ -23,7 +23,7 @@ const Container = styled.div`
 `;
 function App() {
 	return (
-		<BrowserRouter>
+		<HashRouter>
 			<Container>
 				<Nav />
 				<Route exact path='/' component={Home} />
@@ -32,7 +32,7 @@ function App() {
 				<Route path='/contact' component={Contact} />
 				<Footer />
 			</Container>
-		</BrowserRouter>
+		</HashRouter>
 	);
 }
 
