@@ -12,9 +12,7 @@ const Container = styled.div`
 function Contact(props) {
 	return (
 		// Render a Thumbnail component
-		<Container>
-			<Logo />{' '}
-		</Container>
+		<Container />
 	);
 }
 

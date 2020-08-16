@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
+import Logo from './Logo';
 import './App.css';
 
 const Container = styled.div`
@@ -11,16 +12,6 @@ const Container = styled.div`
 	height: 10vh;
 	display: flex;
 	background-color: #252525;
-`;
-
-const Logo = styled.div`
-	display: flex;
-	width: 100%;
-	justify-content: left;
-	margin: 0;
-	padding: 0 10px;
-	color: white;
-	color: palevioletred;
 `;
 
 const NavLinks = styled.ul`
@@ -46,13 +37,13 @@ const StyledLink = styled(Link)`
 	}
 	padding: 0 10px;
 	transition: all .3s;
+
 `;
 
 function Nav(props) {
 	return (
-		// Render a Thumbnail component
 		<Container>
-			<Logo>Logo Goes Here</Logo>
+			<Logo x={35} y={0} w={40} h={40} />{' '}
 			<NavLinks className='navigation-sub'>
 				<StyledLink to='/'>Home</StyledLink>
 				<StyledLink to='/projects'>Projects</StyledLink>
