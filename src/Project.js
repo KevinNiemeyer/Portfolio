@@ -20,6 +20,7 @@ function Project(props) {
 				style='width: 100%'
 				cardSize='large'
 				showGraphic={true}
+				description={true}
 				maxLine={2}
 				minLine={1}
 				url='https://kevinniemeyer.github.io/portfolio/'
