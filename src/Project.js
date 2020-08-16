@@ -17,7 +17,8 @@ function Project(props) {
 	return (
 		<Container>
 			<ReactTinyLink
-				cardSize='small'
+				style='width: 100%'
+				cardSize='large'
 				showGraphic={true}
 				maxLine={2}
 				minLine={1}
