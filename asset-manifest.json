@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.03f1dbcc.chunk.css",
-    "main.js": "/portfolio/static/js/main.d90e98b0.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.d90e98b0.chunk.js.map",
-    "runtime-main.js": "/portfolio/static/js/runtime-main.209c2d7e.js",
-    "runtime-main.js.map": "/portfolio/static/js/runtime-main.209c2d7e.js.map",
-    "static/js/2.61f113f7.chunk.js": "/portfolio/static/js/2.61f113f7.chunk.js",
-    "static/js/2.61f113f7.chunk.js.map": "/portfolio/static/js/2.61f113f7.chunk.js.map",
-    "index.html": "/portfolio/index.html",
-    "precache-manifest.3eb62a9f54de4d09951fb510231aa2dd.js": "/portfolio/precache-manifest.3eb62a9f54de4d09951fb510231aa2dd.js",
-    "service-worker.js": "/portfolio/service-worker.js",
-    "static/css/main.03f1dbcc.chunk.css.map": "/portfolio/static/css/main.03f1dbcc.chunk.css.map",
-    "static/js/2.61f113f7.chunk.js.LICENSE.txt": "/portfolio/static/js/2.61f113f7.chunk.js.LICENSE.txt",
-    "static/media/projectThumb.png": "/portfolio/static/media/projectThumb.7721296a.png"
+    "main.css": "/portfolio/npm/static/css/main.d114a778.chunk.css",
+    "main.js": "/portfolio/npm/static/js/main.c49fc57a.chunk.js",
+    "main.js.map": "/portfolio/npm/static/js/main.c49fc57a.chunk.js.map",
+    "runtime-main.js": "/portfolio/npm/static/js/runtime-main.1c9edfb5.js",
+    "runtime-main.js.map": "/portfolio/npm/static/js/runtime-main.1c9edfb5.js.map",
+    "static/js/2.65f412bb.chunk.js": "/portfolio/npm/static/js/2.65f412bb.chunk.js",
+    "static/js/2.65f412bb.chunk.js.map": "/portfolio/npm/static/js/2.65f412bb.chunk.js.map",
+    "index.html": "/portfolio/npm/index.html",
+    "precache-manifest.4f91022de528804db5c79515a51c57bb.js": "/portfolio/npm/precache-manifest.4f91022de528804db5c79515a51c57bb.js",
+    "service-worker.js": "/portfolio/npm/service-worker.js",
+    "static/css/main.d114a778.chunk.css.map": "/portfolio/npm/static/css/main.d114a778.chunk.css.map",
+    "static/js/2.65f412bb.chunk.js.LICENSE.txt": "/portfolio/npm/static/js/2.65f412bb.chunk.js.LICENSE.txt",
+    "static/media/projectThumb.png": "/portfolio/npm/static/media/projectThumb.7721296a.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.209c2d7e.js",
-    "static/js/2.61f113f7.chunk.js",
-    "static/css/main.03f1dbcc.chunk.css",
-    "static/js/main.d90e98b0.chunk.js"
+    "static/js/runtime-main.1c9edfb5.js",
+    "static/js/2.65f412bb.chunk.js",
+    "static/css/main.d114a778.chunk.css",
+    "static/js/main.c49fc57a.chunk.js"
   ]
 }
