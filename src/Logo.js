@@ -21,7 +21,7 @@ function Logo(props) {
 	return (
 		// Render a Thumbnail component
 		<Container>
-			<svg width='auto' height='250' version='1.1' xmlns='http://www.w3.org/2000/svg'>
+			<svg width='250' height='250' version='1.1' xmlns='http://www.w3.org/2000/svg'>
 				// left vertical
 				<line x1={x} x2={x} y1={y} y2={y + h} stroke='cornflowerblue' strokeWidth='5' />
 				// right vertical
