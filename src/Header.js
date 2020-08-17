@@ -1,17 +1,14 @@
 import React from 'react';
 import styled from 'styled-components';
+
 import './App.css';
 
-const Container = styled.div`
-	display: flex;
-	flex-direction: column;
-	width: 100%;
-`;
+const Container = styled.div`width: 100%;`;
 
 const Heading = styled.h1`
-	margin-top: ${(props) => props.top}%;
 	margin-left: ${(props) => props.left}%;
-	margin-bottom: 10px;
+	padding: 0;
+	margin: 0;
 	text-align: left;
 	font-family: 'Orbitron', sans-serif;
 	font-size: ${(props) => props.scale}vw;
@@ -54,9 +51,13 @@ const Heading = styled.h1`
 `;
 
 const Subheading = styled.h3`
+	width: 100%;
+	text-align: right;
 	font-size: ${(props) => props.scale / 4}vw;
 	margin-left: ${(props) => props.left * 6}%;
 	color: #555555;
+	padding: 0;
+	margin: 10px 0 0 0;
 `;
 
 function Header(props) {

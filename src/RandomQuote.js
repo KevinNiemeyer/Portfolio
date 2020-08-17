@@ -1,25 +1,17 @@
 import React, { useState, useEffect } from 'react';
-import styled from 'styled-components';
-import Header from './Header';
-import Motto from './Motto';
-import RandomQuote from './RandomQuote';
+import styled, { css } from 'styled-components';
+import './random-quote-styles.css';
 import './App.css';
 
 const axios = require('axios');
 
 const Container = styled.div`
-	display: flex;
-	flex-direction: row;
-	margin-top: 5%;
-	align-items: flex-start;
+	width: 80%;
+	font-size: 14px;
+	padding: 10px;
+`;
 
-	height: 80vh;
-	width: 100%;
-`;
-const Wrapper = styled.div`
-	display: flex;
-	width: 50%;
-`;
+const Wrapper = styled.div`width: 50%;`;
 
 const Home = (props) => {
 	const [ quote, setQuote ] = useState([]);
@@ -42,20 +34,17 @@ const Home = (props) => {
 		return null;
 	}
 	if (author === '') {
-		console.log('yes');
+		setAuthor('Anonymous');
 	}
 	console.log(quote, ' ', author);
 	return (
 		<Container>
-			<Wrapper>
-				<Header name='Kevin Niemeyer' subheading='Developer / Musician / Human' top='-3' left='5' scale='7' />
-			</Wrapper>
-			<Wrapper>
-				<Motto />
-			</Wrapper>
-			<Wrapper>
-				<RandomQuote />
-			</Wrapper>
+			<blockquote>
+				{quote}
+				<footer>
+					<cite>{author}</cite>
+				</footer>
+			</blockquote>
 		</Container>
 	);
 };
