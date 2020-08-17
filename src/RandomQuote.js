@@ -36,7 +36,6 @@ const Home = (props) => {
 	if (author === '') {
 		setAuthor('Anonymous');
 	}
-	console.log(quote, ' ', author);
 	return (
 		<Container>
 			<blockquote>
