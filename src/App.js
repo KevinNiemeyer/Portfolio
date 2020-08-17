@@ -1,7 +1,8 @@
 // App.jsx
 
 import React from 'react';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { BrowserRouter, HashRouter, Switch, Route } from 'react-router-dom';
+
 import styled from 'styled-components';
 import Nav from './Nav';
 import Home from './Home.js';
@@ -24,16 +25,18 @@ const Container = styled.div`
 `;
 function App() {
 	return (
-		<Router>
+		<BrowserRouter>
 			<Container>
 				<Nav />
-				<Route exact path='/' component={Home} />
-				<Route exact path='/about' component={About} />
-				<Route exact path='/projects' component={Projects} />
-				<Route exact path='/contact' component={Contact} />
+				<Switch>
+					<Route exact path='/' component={Home} />
+					<Route path='/about' component={About} />
+					<Route path='/projects' component={Projects} />
+					<Route path='/contact' component={Contact} />
+				</Switch>
 				<Footer />
 			</Container>
-		</Router>
+		</BrowserRouter>
 	);
 }
 
