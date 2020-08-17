@@ -1,5 +1,4 @@
 import React from 'react';
-import { BrowserRouter, Route, Link } from 'react-router-dom';
 import styled from 'styled-components';
 import './App.css';
 
@@ -17,8 +16,8 @@ const Container = styled.div`
 	color: lightgrey;
 `;
 
-function Nav(props) {
+function Footer(props) {
 	return <Container>@Kevin Niemeyer 2020</Container>;
 }
 
-export default Nav;
+export default Footer;

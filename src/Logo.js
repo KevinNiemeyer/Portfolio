@@ -22,23 +22,23 @@ function Logo(props) {
 		// Render a Thumbnail component
 		<Container>
 			<svg width='250' height='250' version='1.1' xmlns='http://www.w3.org/2000/svg'>
-				// left vertical
+				eslint-disable-next-line // left vertical
 				<line x1={x} x2={x} y1={y} y2={y + h} stroke='cornflowerblue' strokeWidth='5' />
-				// right vertical
+				eslint-disable-next-line // right vertical
 				<line x1={x + w} x2={x + w} y1={y} y2={y + h} stroke='cornflowerblue' strokeWidth='5' />
-				// top diagonal
+				eslint-disable-next-line // top diagonal
 				<line x1={x} x2={x + w} y1={y + h / 2} y2={y} stroke='cornflowerblue' strokeWidth='5' />
-				// bottom diagonal
+				eslint-disable-next-line // bottom diagonal
 				<line x1={x} x2={x + w} y1={y + h / 2} y2={y + h} stroke='cornflowerblue' strokeWidth='5' />
-				// top left
+				eslint-disable-next-line // top left
 				<circle cx={x} cy={y} r='3' stroke='red' fill='transparent' strokeWidth='3' />
-				// middle
+				eslint-disable-next-line // middle
 				<circle cx={x} cy={y + h / 2} r='3' stroke='red' fill='transparent' strokeWidth='3' />
-				// bottom left
+				eslint-disable-next-line // bottom left
 				<circle cx={x} cy={y + h} r='3' stroke='red' fill='transparent' strokeWidth='3' />
-				// top right
+				eslint-disaable-next-line // top right
 				<circle cx={x + w} cy={y} r='3' stroke='red' fill='transparent' strokeWidth='3' />
-				// bottom right
+				eslint-disable-next-line // bottom right
 				<circle cx={x + w} cy={y + h} r='3' stroke='red' fill='transparent' strokeWidth='3' />
 			</svg>
 		</Container>

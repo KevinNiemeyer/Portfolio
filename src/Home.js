@@ -44,7 +44,6 @@ const Home = (props) => {
 	if (author === '') {
 		console.log('yes');
 	}
-	console.log(quote, ' ', author);
 	return (
 		<Container>
 			<Wrapper>

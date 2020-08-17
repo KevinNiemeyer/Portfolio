@@ -27,7 +27,7 @@ const rotated = {
 	transformOrigin: 'center',
 	transform: 'rotate(-90deg)'
 };
-function Motto(props) {
+function Skills(props) {
 	return (
 		// Render a Thumbnail component
 		<Container>
@@ -60,4 +60,4 @@ function Motto(props) {
 	);
 }
 
-export default Motto;
+export default Skills;

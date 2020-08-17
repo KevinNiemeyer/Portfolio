@@ -1,7 +1,7 @@
 // App.jsx
 
 import React from 'react';
-import { BrowserRouter, HashRouter, Switch, Route } from 'react-router-dom';
+import { HashRouter as Router, Switch, Route } from 'react-router-dom';
 
 import styled from 'styled-components';
 import Nav from './Nav';
@@ -23,20 +23,21 @@ const Container = styled.div`
 	transition: all .3s;
 	max-height: 100vh;
 `;
+
 function App() {
 	return (
-		<BrowserRouter>
+		<Router>
 			<Container>
 				<Nav />
 				<Switch>
-					<Route exact path='/' component={Home} />
+					<Route path='/' exact component={Home} />
 					<Route path='/about' component={About} />
 					<Route path='/projects' component={Projects} />
 					<Route path='/contact' component={Contact} />
 				</Switch>
 				<Footer />
 			</Container>
-		</BrowserRouter>
+		</Router>
 	);
 }
 

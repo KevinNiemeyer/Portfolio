@@ -1,7 +1,5 @@
 import React from 'react';
-import Thumbnail from './Thumbnail.js'; // Import the Thumbnail component
 import Header from './Header';
-import projectThumb from './assets/thumbnails/projectThumb.png';
 import styled from 'styled-components';
 import './App.css';
 

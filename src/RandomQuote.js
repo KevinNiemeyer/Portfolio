@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import styled, { css } from 'styled-components';
+import styled from 'styled-components';
 import './random-quote-styles.css';
 import './App.css';
 
@@ -11,9 +11,7 @@ const Container = styled.div`
 	padding: 10px;
 `;
 
-const Wrapper = styled.div`width: 50%;`;
-
-const Home = (props) => {
+const RandomQuote = (props) => {
 	const [ quote, setQuote ] = useState([]);
 	const [ author, setAuthor ] = useState([]);
 	const getData = () => {
@@ -48,4 +46,4 @@ const Home = (props) => {
 	);
 };
 
-export default Home;
+export default RandomQuote;
