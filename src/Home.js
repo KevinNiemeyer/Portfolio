@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import styled from 'styled-components';
 import Header from './Header';
-import Motto from './Motto';
+import Skills from './Skills';
 import RandomQuote from './RandomQuote';
 import './App.css';
 
@@ -51,7 +51,7 @@ const Home = (props) => {
 				<Header name='Kevin Niemeyer' subheading='Developer / Musician / Human' top='-3' left='5' scale='7' />
 			</Wrapper>
 			<Wrapper>
-				<Motto />
+				<Skills />
 			</Wrapper>
 			<Wrapper>
 				<RandomQuote />

@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import './App.css';
-import './motto-styles.css';
+import './skills-styles.css';
 
 const Container = styled.div`
 	display: flex;
@@ -11,13 +11,13 @@ const Container = styled.div`
 `;
 
 const Divider = styled.div`
-	width: 40px;
+	width: 35px;
 	margin-top: 20px;
 	height: 100%;
 	display: flex;
 	align-items: center;
 	font-family: 'Orbitron', sans-serif;
-	letter-spacing: 7px;
+	letter-spacing: 10px;
 	font-weight: bold;
 	color: darkgrey;
 `;

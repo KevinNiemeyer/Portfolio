@@ -3,7 +3,10 @@ import styled from 'styled-components';
 
 import './App.css';
 
-const Container = styled.div`width: 100%;`;
+const Container = styled.div`
+	margin-left: 20px;
+	width: 100%;
+`;
 
 const Heading = styled.h1`
 	margin-left: ${(props) => props.left}%;
