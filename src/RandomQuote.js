@@ -7,7 +7,7 @@ const axios = require('axios');
 
 const Container = styled.div`
 	width: 80%;
-	font-size: 14px;
+	font-size: 22px;
 	padding: 10px;
 `;
 
