@@ -45,7 +45,7 @@ function Nav(props) {
 		<Container>
 			<Logo x={35} y={0} w={100} h={40} />{' '}
 			<NavLinks className='navigation-sub'>
-				<StyledLink to='/home'>Home</StyledLink>
+				<StyledLink to='/'>Home</StyledLink>
 				<StyledLink to='/projects'>Projects</StyledLink>
 				<StyledLink to='/about'>About Me</StyledLink>
 				<StyledLink to='/contact'>Contact</StyledLink>
