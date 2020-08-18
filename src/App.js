@@ -1,7 +1,7 @@
 // App.jsx
 
 import React from 'react';
-import { HashRouter as Router, Switch, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 import styled from 'styled-components';
 import Nav from './Nav';
@@ -30,10 +30,10 @@ function App() {
 			<Container>
 				<Nav />
 				<Switch>
-					<Route path='/' exact component={Home} />
-					<Route path='/about' component={About} />
-					<Route path='/projects' component={Projects} />
-					<Route path='/contact' component={Contact} />
+					<Route exact path='/about' component={About} />
+					<Route exact path='/projects' component={Projects} />
+					<Route exact path='/contact' component={Contact} />
+					<Route exact path='/*' component={Home} />
 				</Switch>
 				<Footer />
 			</Container>

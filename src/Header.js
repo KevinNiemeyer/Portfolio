@@ -60,7 +60,6 @@ const Subheading = styled.h3`
 	margin-left: ${(props) => props.left * 6}%;
 	color: #555555;
 	padding: 0;
-	margin: 10px 0 0 0;
 `;
 
 function Header(props) {

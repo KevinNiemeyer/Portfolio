@@ -36,7 +36,7 @@ function Logo(props) {
 				<circle cx={x} cy={y + h / 2} r='3' stroke='red' fill='transparent' strokeWidth='3' />
 				eslint-disable-next-line // bottom left
 				<circle cx={x} cy={y + h} r='3' stroke='red' fill='transparent' strokeWidth='3' />
-				eslint-disaable-next-line // top right
+				eslint-disable-next-line // top right
 				<circle cx={x + w} cy={y} r='3' stroke='red' fill='transparent' strokeWidth='3' />
 				eslint-disable-next-line // bottom right
 				<circle cx={x + w} cy={y + h} r='3' stroke='red' fill='transparent' strokeWidth='3' />
