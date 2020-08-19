@@ -55,7 +55,7 @@ const Heading = styled.h1`
 
 const Subheading = styled.h3`
 	width: 100%;
-	text-align: right;
+	text-align: center;
 	font-size: ${(props) => props.scale / 4}vw;
 	margin-left: ${(props) => props.left * 6}%;
 	color: #555555;
