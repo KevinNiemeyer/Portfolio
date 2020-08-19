@@ -27,10 +27,6 @@ const rotated = {
 	transformOrigin: 'center',
 	transform: 'rotate(-90deg)'
 };
-<<<<<<< HEAD
-=======
-
->>>>>>> bafbde0b7ed22efe437df0d36cd5be2eb1334cf2
 function Skills(props) {
 	return (
 		// Render a Thumbnail component
