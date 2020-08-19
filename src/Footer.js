@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import './App.css';
 
 const Container = styled.div`
-	position: relative;
+	position: fixed;
 	bottom: 0;
 	left: 0;
 	justify-content: center;
