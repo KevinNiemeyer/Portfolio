@@ -18,7 +18,7 @@ const RandomQuote = (props) => {
 		axios({
 			method: 'post',
 			headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-			url: 'http://quotes.stormconsultancy.co.uk/random.json'
+			url: 'https://quotes.stormconsultancy.co.uk/random.json'
 		}).then(function(response) {
 			setQuote(response.data.quote);
 			setAuthor(response.data.author);

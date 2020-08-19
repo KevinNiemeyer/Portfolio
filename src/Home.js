@@ -36,7 +36,7 @@ const Home = (props) => {
 	};
 
 	useEffect(() => {
-		getData();
+		//getData();
 	}, []);
 	if (quote.length === 0) {
 		return null;
