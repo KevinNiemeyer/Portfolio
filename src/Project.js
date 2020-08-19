@@ -14,7 +14,7 @@ const Container = styled.div`
 `;
 
 function Project(props) {
-	return <Container>Projects</Container>;
+	return <Container>Project</Container>;
 }
 
 export default Project;
