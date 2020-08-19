@@ -1,8 +1,7 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
-import { ReactTinyLink } from 'react-tiny-link';
-import axios from 'axios';
+
 import './App.css';
 
 const Container = styled.div`
@@ -12,29 +11,21 @@ const Container = styled.div`
 	align-items: center;
 	width: 100%;
 	height: auto;
+	border: solid darkgrey 1px;
 `;
 
+const UL = styled.ul`list-style-type: none;`;
+const LI = styled.li`text-decoration: none;`;
 function Project(props) {
-	const handleClick = () => {
-		const url =
-			'https://api.github.com/users/yoloonthebattlefield?fbclid=IwAR2stMhMjngpObVKnSVLthIUb6J4oMsix7PmYw_T3kqkWDSuyyNaYvAGWUE';
-		axios
-			.get(url, {
-				headers: {
-					'Access-Control-Allow-Origin': '*'
-				}
-			})
-			.then((resp) => {
-				let result = resp.data;
-				console.log(result);
-			});
-	};
-
-	useEffect(() => {
-		handleClick();
-	}, []);
-
-	return <Container>Projects</Container>;
+	console.log(props.id);
+	return (
+		<Container>
+			<UL>
+				<LI>Project: {props.description}</LI>
+				<LI>URL: {props.url}</LI>
+			</UL>
+		</Container>
+	);
 }
 
 export default Project;
