@@ -14,25 +14,6 @@ const Container = styled.div`
 `;
 
 function Project(props) {
-	const handleClick = () => {
-		const url =
-			'https://api.github.com/users/yoloonthebattlefield?fbclid=IwAR2stMhMjngpObVKnSVLthIUb6J4oMsix7PmYw_T3kqkWDSuyyNaYvAGWUE';
-		axios
-			.get(url, {
-				headers: {
-					'Access-Control-Allow-Origin': '*'
-				}
-			})
-			.then((resp) => {
-				let result = resp.data;
-				console.log(result);
-			});
-	};
-
-	useEffect(() => {
-		//handleClick();
-	}, []);
-
 	return <Container>Projects</Container>;
 }
 
