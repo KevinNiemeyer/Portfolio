@@ -22,28 +22,6 @@ const Wrapper = styled.div`
 `;
 
 const Home = (props) => {
-	const [ quote, setQuote ] = useState([]);
-	const [ author, setAuthor ] = useState([]);
-	const getData = () => {
-		axios({
-			method: 'post',
-			headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-			url: 'http://quotes.stormconsultancy.co.uk/random.json'
-		}).then(function(response) {
-			setQuote(response.data.quote);
-			setAuthor(response.data.author);
-		});
-	};
-
-	useEffect(() => {
-		//getData();
-	}, []);
-	if (quote.length === 0) {
-		return null;
-	}
-	if (author === '') {
-		console.log('yes');
-	}
 	return (
 		<Container>
 			<Wrapper>
