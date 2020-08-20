@@ -16,14 +16,13 @@ const Container = styled.div`
 const UL = styled.ul`list-style-type: none;`;
 const LI = styled.li`text-decoration: none;`;
 function Project(props) {
-	console.log(props.id);
+	console.log(props);
 	return (
 		<Container>
 			<UL>
 				<LI>Project: {props.description}</LI>
 				<LI>
-					{/* can't get the url to work right*/}
-					<Link to={props.git_url.git}>URL: {props.git_url.git}</Link>
+					<a href={props.repo.html_url}>URL: {props.repo.html_url}</a>
 				</LI>
 			</UL>
 		</Container>

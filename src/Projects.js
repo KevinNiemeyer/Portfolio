@@ -32,7 +32,10 @@ function Projects(props) {
 	useEffect(() => {
 		getData();
 	}, []);
-	console.log(repos);
+	if (repos.length === 0) {
+		console.log('test');
+		return null;
+	}
 	return (
 		// Render a Thumbnail component
 		<Container>
@@ -40,7 +43,12 @@ function Projects(props) {
 			{repos.map((repo) => {
 				if (repo.private === false && repo.fork === false) {
 					return (
-						<Project key={repo.id} id={repo.id} git_url={repo.git_url} description={repo.description}>
+						<Project
+							repo={repo}
+							key={repo.id}
+							id={repo.id}
+							git_url={repo.git_url}
+							description={repo.description}>
 							{''}
 						</Project>
 					);
