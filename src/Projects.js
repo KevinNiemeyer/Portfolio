@@ -11,7 +11,8 @@ const Container = styled.div`
 	width: 100vw;
 	display: flex;
 	flex-direction: column;
-	overflow: auto;
+	overflow-y: auto;
+	overflow-x: hidden;
 `;
 function Projects(props) {
 	const [ repos, setRepos ] = useState([]);

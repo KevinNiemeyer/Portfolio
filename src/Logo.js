@@ -24,23 +24,23 @@ function Logo(props) {
 		<Container>
 			<Link style={{ textDecoration: 'none' }} to='/'>
 				<svg width='250' height='250' version='1.1' xmlns='http://www.w3.org/2000/svg'>
-					// left vertical
+					{/*left vertical*/}
 					<line x1={x} x2={x} y1={y} y2={y + h} stroke='cornflowerblue' strokeWidth='5' />
-					// right vertical
+					{/*right vertical*/}
 					<line x1={x + w} x2={x + w} y1={y} y2={y + h} stroke='cornflowerblue' strokeWidth='5' />
-					// top diagonal
+					{/*top diagonal*/}
 					<line x1={x} x2={x + w} y1={y + h / 2} y2={y} stroke='cornflowerblue' strokeWidth='5' />
-					// bottom diagonal
+					{/*bottom diagonal*/}
 					<line x1={x} x2={x + w} y1={y + h / 2} y2={y + h} stroke='cornflowerblue' strokeWidth='5' />
-					// top left
+					{/*top left*/}
 					<circle cx={x} cy={y} r='3' stroke='red' fill='transparent' strokeWidth='3' />
-					// middle
+					{/*middle*/}
 					<circle cx={x} cy={y + h / 2} r='3' stroke='red' fill='transparent' strokeWidth='3' />
-					// bottom left
+					{/*bottom left*/}
 					<circle cx={x} cy={y + h} r='3' stroke='red' fill='transparent' strokeWidth='3' />
-					// top right
+					{/*top right*/}
 					<circle cx={x + w} cy={y} r='3' stroke='red' fill='transparent' strokeWidth='3' />
-					// bottom right
+					{/*bottom right*/}
 					<circle cx={x + w} cy={y + h} r='3' stroke='red' fill='transparent' strokeWidth='3' />
 				</svg>
 			</Link>

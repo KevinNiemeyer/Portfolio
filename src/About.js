@@ -4,11 +4,12 @@ import styled from 'styled-components';
 import './App.css';
 
 const Container = styled.div`
-	height: 80vh;
-	width: 100%;
 	position: relative;
+	width: 100vw;
 	display: flex;
 	flex-direction: column;
+	overflow-y: auto;
+	overflow-x: hidden;
 `;
 function About(props) {
 	return (
