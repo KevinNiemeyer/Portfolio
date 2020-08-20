@@ -14,28 +14,27 @@ const RandomQuote = (props) => {
 	const [ quote, setQuote ] = useState([]);
 	const [ author, setAuthor ] = useState([]);
 	const getData = () => {
-		axios({
-			method: 'post',
-			headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-			url: 'https://quotes.stormconsultancy.co.uk/random.json'
-		}).then(function(response) {
-			setQuote(response.data.quote);
-			setAuthor(response.data.author);
+		const url = 'https://api.forismatic.com/api/1.0/?method=getQuote&lang=en&format=json';
+		axios.get(url).then((response) => {
+			console.log(response.data.quoteText);
+			setQuote(response.data.quoteText);
+			setAuthor(response.data.quoteAuthor);
 		});
 	};
-
 	useEffect(() => {
 		getData();
 	}, []);
+	/* 
 	if (quote.length === 0) {
 		return null;
 	}
 	if (author === '') {
 		setAuthor('Anonymous');
-	}
+	} */
 	return (
 		<Container>
 			<blockquote>
+				{/*{quote}*/}
 				{quote}
 				<footer>
 					<cite>{author}</cite>
