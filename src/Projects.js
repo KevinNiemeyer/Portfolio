@@ -1,3 +1,4 @@
+/* eslint-disable array-callback-return */
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import Header from './Header.js';
@@ -6,11 +7,11 @@ import styled from 'styled-components';
 import './App.css';
 
 const Container = styled.div`
-	height: 80vh;
-	width: 100%;
 	position: relative;
+	width: 100vw;
 	display: flex;
 	flex-direction: column;
+	overflow: auto;
 `;
 function Projects(props) {
 	const [ repos, setRepos ] = useState([]);
@@ -19,9 +20,8 @@ function Projects(props) {
 			'https://api.github.com/users/KevinNiemeyer/repos?fbclid=IwAR2stMhMjngpObVKnSVLthIUb6J4oMsix7PmYw_T3kqkWDSuyyNaYvAGWUE';
 		axios
 			.get(url, {
-				headers: {
-					'Access-Control-Allow-Origin': '*'
-				}
+				private: 'false',
+				fork: 'false'
 			})
 			.then((response) => {
 				let result = response.data;
@@ -37,7 +37,13 @@ function Projects(props) {
 		<Container>
 			<Header left='3' top='3' scale='3' name='Projects' />
 			{repos.map((repo) => {
-				return <Project key={repo.id} id={repo.id} url={repo.url} description={repo.description} />;
+				if (repo.private === false && repo.fork === false) {
+					return (
+						<Project key={repo.id} id={repo.id} git_url={repo.git_url} description={repo.description}>
+							{''}
+						</Project>
+					);
+				}
 			})};
 		</Container>
 	);

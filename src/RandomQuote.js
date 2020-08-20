@@ -2,8 +2,7 @@ import React, { useState, useEffect } from 'react';
 import styled from 'styled-components';
 import './random-quote-styles.css';
 import './App.css';
-
-const axios = require('axios');
+import axios from 'axios';
 
 const Container = styled.div`
 	width: 80%;

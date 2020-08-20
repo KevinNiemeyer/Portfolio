@@ -2,7 +2,6 @@ import React from 'react';
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 
-import axios from 'axios';
 import './App.css';
 
 const Container = styled.div`
@@ -11,7 +10,6 @@ const Container = styled.div`
 	justify-content: left;
 	align-items: center;
 	width: 100%;
-	height: auto;
 	border: solid darkgrey 1px;
 `;
 
@@ -23,7 +21,10 @@ function Project(props) {
 		<Container>
 			<UL>
 				<LI>Project: {props.description}</LI>
-				<LI>URL: {props.url}</LI>
+				<LI>
+					{/* can't get the url to work right*/}
+					<Link to={props.git_url.git}>URL: {props.git_url.git}</Link>
+				</LI>
 			</UL>
 		</Container>
 	);

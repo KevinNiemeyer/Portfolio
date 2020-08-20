@@ -22,7 +22,7 @@ const Container = styled.div`
 	margin: 0;
 	padding: 0;
 	transition: all .3s;
-	max-height: auto;
+	max-height: 100vh;
 `;
 
 function App() {
@@ -37,7 +37,7 @@ function App() {
 					<Route exact path='/about' component={About} />
 					<Route exact path='/projects' component={Projects} />
 					<Route exact path='/contact' component={Contact} />
-					<Route path='/' component={NotFound} />
+					<Route path='/*' component={NotFound} />
 				</Switch>
 				<Footer />
 			</Container>
