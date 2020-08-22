@@ -13,6 +13,7 @@ const Container = styled.div`
   overflow-y: auto;
   overflow-x: hidden;
 `;
+
 function Projects(props) {
   const [repos, setRepos] = useState([]);
   const getData = () => {
@@ -46,9 +47,8 @@ function Projects(props) {
               key={repo.id}
               id={repo.id}
               git_url={repo.git_url}
-              description={repo.description}>
-              {''}
-            </Project>
+              description={repo.description}
+              pic={''}></Project>
           );
         }
       })}
