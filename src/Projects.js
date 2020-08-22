@@ -33,7 +33,6 @@ function Projects(props) {
 		getData();
 	}, []);
 	if (repos.length === 0) {
-		console.log('test');
 		return null;
 	}
 	return (
