@@ -51,7 +51,7 @@ function Projects(props) {
               description={repo.description}
               pic={''}></Project>
           );
-        } else return null;
+        }
       })}
       ;
     </Container>
