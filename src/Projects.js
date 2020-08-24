@@ -1,3 +1,5 @@
+//trying to get this to work on netlify
+
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import Header from './Header.js';
@@ -40,8 +42,10 @@ function Projects(props) {
     // Render a Thumbnail component
     <Container>
       <Header left='3' top='3' scale='3' name='Projects' />
-      {repos.map((repo) => {
-        if (repo.private === false && repo.fork === false) {
+      {repos
+        .filter((repo) => repo.private === false && repo.fork === false)
+        .map((repo) => {
+          //if (repo.private === false && repo.fork === false)
           return (
             <Project
               repo={repo}
@@ -51,8 +55,7 @@ function Projects(props) {
               description={repo.description}
               pic={''}></Project>
           );
-        }
-      })}
+        })}
       ;
     </Container>
   );
