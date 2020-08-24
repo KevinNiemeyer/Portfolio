@@ -18,13 +18,14 @@ const LI = styled.li`
   padding: 20px;
   text-decoration: none;
 `;
-const Title = styled.h3``;
 function Project(props) {
   console.log(props.repo.name);
   //https://kevinniemeyer.github.io/HandlebarsPhotoAlbum/
-  const apiKey = `fcdb89fa56c1147e`;
   const liveDemoURL = `https://kevinniemeyer.github.io/${props.repo.name}/`;
-  const liveImgSrc = `http://api.page2images.com/directlink?p2i_url=${liveDemoURL}&p2i_key=${apiKey}& p2i_size=150x150`;
+
+  //const apiKey = `fcdb89fa56c1147e`;
+  //const liveImgSrc = `http://api.page2images.com/directlink?p2i_url=${liveDemoURL}&p2i_key=${apiKey}& p2i_size=150x150`;
+
   console.log(props.repo.pic);
   return (
     <Container>
@@ -44,7 +45,7 @@ function Project(props) {
           <h3>
             <a href={liveDemoURL}>Live Demo</a>
           </h3>
-          <img src={liveImgSrc} alt={props.repo.name} />
+          <img src={'#'} alt={props.repo.name} />
         </LI>
       </UL>
     </Container>

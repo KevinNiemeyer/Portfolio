@@ -31,6 +31,7 @@ function Projects(props) {
   };
   useEffect(() => {
     getData();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
   if (repos.length === 0) {
     return null;
@@ -50,7 +51,7 @@ function Projects(props) {
               description={repo.description}
               pic={''}></Project>
           );
-        }
+        } else return null;
       })}
       ;
     </Container>
