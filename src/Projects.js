@@ -33,19 +33,16 @@ function Projects(props) {
   };
   useEffect(() => {
     getData();
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
   if (repos.length === 0) {
     return null;
   }
   return (
-    // Render a Thumbnail component
     <Container>
       <Header left='3' top='3' scale='3' name='Projects' />
       {repos
         .filter((repo) => repo.private === false && repo.fork === false)
         .map((repo) => {
-          //if (repo.private === false && repo.fork === false)
           return (
             <Project
               repo={repo}

@@ -20,11 +20,7 @@ const LI = styled.li`
 `;
 function Project(props) {
   console.log(props.repo.name);
-  //https://kevinniemeyer.github.io/HandlebarsPhotoAlbum/
   const liveDemoURL = `https://kevinniemeyer.github.io/${props.repo.name}/`;
-
-  //const apiKey = `fcdb89fa56c1147e`;
-  //const liveImgSrc = `http://api.page2images.com/directlink?p2i_url=${liveDemoURL}&p2i_key=${apiKey}& p2i_size=150x150`;
 
   console.log(props.repo.pic);
   return (
