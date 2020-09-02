@@ -31,8 +31,14 @@ function Projects(props) {
         project_name='GitHub Profile App'
         git_url='https://github.com/KevinNiemeyer/github-app'
         live_url='https://kevinniemeyer.github.io/github-app/'
-        description='Instagram clone that consumes the Unsplash API to display and search photos on Unsplash.'
+        description='App that uses Axios to retrieve API profile data on GitHub for two profiles and compare their stats'
         img_src='./assets/images/github-app-preview.png'></Project>
+      <Project
+        project_name='Link Harvester'
+        git_url='https://github.com/KevinNiemeyer/link-harvester.git'
+        live_url='https://kevinniemeyer.github.io/link-harvester/'
+        description="Harvests all links from a page's HTML code that you copy/paste in or upload from a file. Could be extended to harvest other useful information, such as metadata, tags, etc..."
+        img_src='./assets/images/link-harvester.png'></Project>
     </Container>
   );
 }

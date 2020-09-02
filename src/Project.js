@@ -20,7 +20,12 @@ const LI = styled.li`
 `;
 
 const Img = styled.img`
-  width: 300px;
+  transition: all 0.5s linear;
+  width: 400px;
+  border: solid lightgrey 1px;
+  &:hover {
+    transform: scale(1.05);
+  }
 `;
 
 function Project(props) {
