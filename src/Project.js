@@ -18,30 +18,33 @@ const LI = styled.li`
   padding: 20px;
   text-decoration: none;
 `;
-function Project(props) {
-  console.log(props.repo.name);
-  const liveDemoURL = `https://kevinniemeyer.github.io/${props.repo.name}/`;
 
-  console.log(props.repo.pic);
+const Img = styled.img`
+  width: 300px;
+`;
+
+function Project(props) {
   return (
     <Container>
       <UL>
         <LI>
-          <h3>
-            Project: <span style={{ color: 'orange' }}>{props.repo.name}</span>
-          </h3>
+          <h2>
+            Project:{' '}
+            <span style={{ color: 'orange' }}>{props.project_name}</span>
+          </h2>
           <h3>
             Description:{' '}
-            <span style={{ color: 'orange' }}>{props.repo.description}</span>
+            <span style={{ color: 'cornflowerblue' }}>{props.description}</span>
           </h3>
           <h3>
             GitHub Repository:&nbsp;
-            <a href={props.repo.html_url}>{props.repo.html_url}</a>
+            <a href={props.git_url}>{props.git_url}</a>
           </h3>
-          <h3>
-            <a href={liveDemoURL}>Live Demo</a>
-          </h3>
-          <img src={'#'} alt={props.repo.name} />
+
+          <a href={props.live_url}>
+            <h3>Live Demo:</h3>
+            <Img src={require(`${props.img_src}`)} alt={props.project_name} />
+          </a>
         </LI>
       </UL>
     </Container>

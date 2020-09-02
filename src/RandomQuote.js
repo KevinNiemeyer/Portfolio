@@ -17,7 +17,6 @@ const RandomQuote = (props) => {
     const url =
       'https://api.forismatic.com/api/1.0/?method=getQuote&lang=en&format=json';
     axios.get(url).then((response) => {
-      console.log(response.data.quoteText);
       setQuote(response.data.quoteText);
       setAuthor(response.data.quoteAuthor);
     });
