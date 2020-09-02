@@ -43,7 +43,7 @@ function Projects(props) {
         project_name='Tic Tac Toe'
         git_url='https://github.com/KevinNiemeyer/tic-tac-toe.git'
         live_url='https://kevinniemeyer.github.io/tic-tac-toe/'
-        description=''
+        description='Tic Tac Toe game app that uses jQuery and Sass/SCSS. Demonstrates my design and animation skills, along with my UI/UX and sound skills using Howler.js. All sounds are my own original creations'
         img_src='./assets/images/tic-tac-toe-preview.png'></Project>
     </Container>
   );
