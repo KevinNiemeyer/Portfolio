@@ -29,37 +29,73 @@ function Logo(props) {
           version='1.1'
           xmlns='http://www.w3.org/2000/svg'>
           <line
+            style={{ animation: 'color_change 3s ease-in alternate infinite' }}
             x1={x}
             x2={x}
             y1={y}
             y2={y + h}
             stroke='cornflowerblue'
-            strokeWidth='5'
-          />
+            strokeWidth='5'>
+            <style>{`
+            zIndex:'-1',
+            @keyframes color_change {
+              from { stroke: cornflowerblue; }
+              to { stroke: red; }
+            }
+        `}</style>
+          </line>
           <line
+            x1={x}
+            x2={x}
+            y1={y + h / 2}
+            y2={y + h}
+            stroke='red'
+            strokeWidth='5'></line>
+
+          <line
+            style={{
+              animation: 'color_change 3s 3s ease-in alternate infinite',
+            }}
             x1={x + w}
             x2={x + w}
             y1={y}
             y2={y + h}
-            stroke='cornflowerblue'
-            strokeWidth='5'
-          />
+            stroke='red'
+            strokeWidth='5'>
+            <style>{`
+            @keyframes color_change {
+              0% { stroke: cornflowerblue; }
+              100% { stroke: red; }
+            }
+      `}</style>
+          </line>
           <line
+            style={{
+              animation: 'color_change 3s ease-in alternate infinite',
+            }}
             x1={x}
             x2={x + w}
             y1={y + h / 2}
             y2={y}
             stroke='cornflowerblue'
-            strokeWidth='5'
-          />
+            strokeWidth='5'>
+            {' '}
+            <style>{`
+            @keyframes color_change {
+              from { stroke: cornflowerblue; }
+              to { stroke: red; }
+            }
+        `}</style>
+          </line>
           <line
             x1={x}
             x2={x + w}
             y1={y + h / 2}
             y2={y + h}
-            stroke='cornflowerblue'
-            strokeWidth='5'
-          />
+            stroke='red'
+            strokeWidth='5'>
+            {' '}
+          </line>
           <circle
             cx={x}
             cy={y}
