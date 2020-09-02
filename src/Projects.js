@@ -37,7 +37,7 @@ function Projects(props) {
         project_name='Link Harvester'
         git_url='https://github.com/KevinNiemeyer/link-harvester.git'
         live_url='https://kevinniemeyer.github.io/link-harvester/'
-        description="Harvests all links from a page's HTML code that you copy/paste in or upload from a file. Could be extended to harvest other useful information, such as metadata, tags, etc..."
+        description="Harvests all links from a page's HTML code that you copy/paste in or upload from a file. Could be extended to harvest other useful information, such as metadata, tags, etc...  Utilizes my jQuery skills"
         img_src='./assets/images/link-harvester.png'></Project>
     </Container>
   );
