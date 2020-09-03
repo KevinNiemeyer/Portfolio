@@ -40,7 +40,7 @@ const P = styled.p`
   font-size: 1.5vw;
   text-align: justify;
   margin: -20px 50px 10px 30px;
-  height: auto;
+  height: 100%;
 `;
 
 const Pic = styled.img`
