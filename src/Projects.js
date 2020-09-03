@@ -71,7 +71,7 @@ function Projects(props) {
         git_url='https://github.com/KevinNiemeyer/photo-album'
         live_url='https://kevinniemeyer.github.io/HandlebarsPhotoAlbum/'
         description='Photo album template that I created using Handlebars that allows a user to retrieve photos using json data, and display them as a modal.'
-        img_src='./assets/images/photo-album.png'></Project>
+        img_src='./assets/images/photo-album-preview.png'></Project>
 
       <Project
         project_name='Pawtastic Site Mockup'
