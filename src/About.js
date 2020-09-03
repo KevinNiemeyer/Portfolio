@@ -81,9 +81,9 @@ function About(props) {
             improve the application and make it more user-friendly.
           </div>
           <div>
-            Before working in the Oil Industry, I was enlisted in the Air Force
-            as a Ground Radar Technician, which is where I acquired a strong
-            foundation in Computer Science and related applications.
+            Before my career in the oil industry, I was enlisted in the Air
+            Force as a Ground Radar Technician, which is where I acquired a
+            strong foundation in Computer Science and related applications.
           </div>
         </P>
       </Wrapper>
