@@ -45,8 +45,16 @@ function Projects(props) {
         live_url='https://kevinniemeyer.github.io/tic-tac-toe/'
         description='Tic Tac Toe game app that uses jQuery and Sass/SCSS. Demonstrates my design and animation skills, along with my UI/UX and sound skills using Howler.js. All sounds/music are my own original creations'
         img_src='./assets/images/tic-tac-toe-preview.png'></Project>
+        
+        <Project
+        project_name='DeveloperNews.io'
+        live_url='http://developers-io.herokuapp.com/'
+        description='News feed app that aggregates all articles and videos within the development ecosphere. The project was written in Vue.js, and I was responsible for all the frontend UI/UX design, and this site showcases my Responsive Design skills.'
+        img_src='./assets/images/developer-news-io.png'></Project>
     </Container>
   );
 }
 
 export default Projects;
+
+http://developers-io.herokuapp.com/
