@@ -67,11 +67,18 @@ function Projects(props) {
         img_src='./assets/images/college-brochure-preview.png'></Project>
 
       <Project
-        project_name='College Brochure'
+        project_name='Photo Album'
         git_url='https://github.com/KevinNiemeyer/photo-album'
         live_url='https://kevinniemeyer.github.io/HandlebarsPhotoAlbum/'
         description='Photo album template that I created using Handlebars that allows a user to retrieve photos using json data, and display them as a modal.'
         img_src='./assets/images/photo-album.png'></Project>
+
+      <Project
+        project_name='Pawtastic Site Mockup'
+        git_url='https://codepen.io/KevinNiemeyer/pen/pooEQWo'
+        live_url=''
+        description=''
+        img_src='./assets/images/pawtastic-mockup-preview.png'></Project>
     </Container>
   );
 }

@@ -41,11 +41,13 @@ function Project(props) {
             Description:{' '}
             <span style={{ color: 'cornflowerblue' }}>{props.description}</span>
           </h3>
-          <h3>
+          if(props.git_url) {<h3>
             GitHub Repository:&nbsp;
             <a href={props.git_url}>{props.git_url}</a>
-          </h3>
-
+          </h3> } 
+          else { <h3>CodePen:&nbsp;
+            <a href={props.cp_url}>{props.cp_url}</a>
+          }
           <a href={props.live_url}>
             <h3>Live Demo:</h3>
             <Img src={require(`${props.img_src}`)} alt={props.project_name} />
