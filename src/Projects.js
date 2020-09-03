@@ -50,7 +50,7 @@ function Projects(props) {
         project_name='DeveloperNews.io'
         live_url='http://developers-io.herokuapp.com/'
         description='News feed app that aggregates all articles and videos within the development ecosphere. The project was written in Vue.js, and I was responsible for all the frontend UI/UX design, and this site showcases my Responsive Design skills.'
-        img_src='./assets/images/developer-news-io.png'></Project>
+        img_src='./assets/images/developer-news-io-preview.png'></Project>
     </Container>
   );
 }
