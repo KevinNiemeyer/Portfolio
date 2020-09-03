@@ -65,6 +65,13 @@ function Projects(props) {
         live_url='https://kevinniemeyer.github.io/college-brochure/'
         description='This is a sort of "virtual" college brochure to give info on various courses offered. It was a project I created at Bov to learn and practice using Sass.'
         img_src='./assets/images/college-brochure-preview.png'></Project>
+
+      <Project
+        project_name='College Brochure'
+        git_url='https://github.com/KevinNiemeyer/photo-album'
+        live_url='https://kevinniemeyer.github.io/HandlebarsPhotoAlbum/'
+        description='Photo album template that I created using Handlebars that allows a user to retrieve photos using json data, and display them as a modal.'
+        img_src='./assets/images/photo-album.png'></Project>
     </Container>
   );
 }
