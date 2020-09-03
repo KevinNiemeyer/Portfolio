@@ -51,8 +51,17 @@ function Projects(props) {
         live_url='http://developers-io.herokuapp.com/'
         description='News feed app that aggregates all articles and videos within the development ecosphere. This was a student project that I was involved with while at Bov Academy, and was written in Vue.js. I was responsible for all the frontend UI/UX design aspects, and this site showcases the Responsive Design skills I learned while at Bov.'
         img_src='./assets/images/developer-news-io-preview.png'></Project>
+        
+        <Project
+        project_name='Calculator'
+        git_url='https://github.com/KevinNiemeyer/calculator'
+        live_url='https://kevinniemeyer.github.io/calculator/'
+        description='My first Bov Academy project using only HTML, CSS, and JavaScript. This was an attempt to clone the iPhone calculator.'
+        img_src='./assets/images/calculator.png'></Project>
     </Container>
   );
 }
 
 export default Projects;
+
+https://github.com/KevinNiemeyer/Calculator
