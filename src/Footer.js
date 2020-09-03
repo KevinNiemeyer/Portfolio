@@ -15,6 +15,7 @@ const Container = styled.div`
   font-size: 12px;
   color: lightgrey;
   overflow: auto;
+  margin-top: 300px;
 `;
 
 function Footer(props) {
