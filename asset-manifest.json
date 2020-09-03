@@ -1,19 +1,20 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.aee37114.chunk.css",
-    "main.js": "/portfolio/static/js/main.1ccdfff7.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.1ccdfff7.chunk.js.map",
+    "main.js": "/portfolio/static/js/main.1d9605ee.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.1d9605ee.chunk.js.map",
     "runtime-main.js": "/portfolio/static/js/runtime-main.209c2d7e.js",
     "runtime-main.js.map": "/portfolio/static/js/runtime-main.209c2d7e.js.map",
-    "static/js/2.d8d192c6.chunk.js": "/portfolio/static/js/2.d8d192c6.chunk.js",
-    "static/js/2.d8d192c6.chunk.js.map": "/portfolio/static/js/2.d8d192c6.chunk.js.map",
+    "static/js/2.280ed3ae.chunk.js": "/portfolio/static/js/2.280ed3ae.chunk.js",
+    "static/js/2.280ed3ae.chunk.js.map": "/portfolio/static/js/2.280ed3ae.chunk.js.map",
     "index.html": "/portfolio/index.html",
-    "precache-manifest.5eacd2b13033b4fc96853628620ed5ab.js": "/portfolio/precache-manifest.5eacd2b13033b4fc96853628620ed5ab.js",
+    "precache-manifest.bab508f81f82ae19a7011103b6d6ee6d.js": "/portfolio/precache-manifest.bab508f81f82ae19a7011103b6d6ee6d.js",
     "service-worker.js": "/portfolio/service-worker.js",
     "static/css/main.aee37114.chunk.css.map": "/portfolio/static/css/main.aee37114.chunk.css.map",
-    "static/js/2.d8d192c6.chunk.js.LICENSE.txt": "/portfolio/static/js/2.d8d192c6.chunk.js.LICENSE.txt",
+    "static/js/2.280ed3ae.chunk.js.LICENSE.txt": "/portfolio/static/js/2.280ed3ae.chunk.js.LICENSE.txt",
     "static/media/aboutThumb.png": "/portfolio/static/media/aboutThumb.f688f77a.png",
     "static/media/calculator-preview.png": "/portfolio/static/media/calculator-preview.b14b6c7b.png",
+    "static/media/college-brochure-preview.png": "/portfolio/static/media/college-brochure-preview.63b0f729.png",
     "static/media/developer-news-io-preview.png": "/portfolio/static/media/developer-news-io-preview.8777ab63.png",
     "static/media/github-app-preview.png": "/portfolio/static/media/github-app-preview.3e17eee3.png",
     "static/media/link-harvester.png": "/portfolio/static/media/link-harvester.13f370c9.png",
@@ -24,8 +25,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.209c2d7e.js",
-    "static/js/2.d8d192c6.chunk.js",
+    "static/js/2.280ed3ae.chunk.js",
     "static/css/main.aee37114.chunk.css",
-    "static/js/main.1ccdfff7.chunk.js"
+    "static/js/main.1d9605ee.chunk.js"
   ]
 }
