@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.aee37114.chunk.css",
-    "main.js": "/portfolio/static/js/main.6b1bb398.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.6b1bb398.chunk.js.map",
+    "main.js": "/portfolio/static/js/main.ccf7e7e8.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.ccf7e7e8.chunk.js.map",
     "runtime-main.js": "/portfolio/static/js/runtime-main.209c2d7e.js",
     "runtime-main.js.map": "/portfolio/static/js/runtime-main.209c2d7e.js.map",
-    "static/js/2.95097971.chunk.js": "/portfolio/static/js/2.95097971.chunk.js",
-    "static/js/2.95097971.chunk.js.map": "/portfolio/static/js/2.95097971.chunk.js.map",
+    "static/js/2.b5de99d6.chunk.js": "/portfolio/static/js/2.b5de99d6.chunk.js",
+    "static/js/2.b5de99d6.chunk.js.map": "/portfolio/static/js/2.b5de99d6.chunk.js.map",
     "index.html": "/portfolio/index.html",
-    "precache-manifest.ca44d7f47aa20c9e1056ec904d55de5d.js": "/portfolio/precache-manifest.ca44d7f47aa20c9e1056ec904d55de5d.js",
+    "precache-manifest.b5ccdb015d311df985d0ce1ae9e3259c.js": "/portfolio/precache-manifest.b5ccdb015d311df985d0ce1ae9e3259c.js",
     "service-worker.js": "/portfolio/service-worker.js",
     "static/css/main.aee37114.chunk.css.map": "/portfolio/static/css/main.aee37114.chunk.css.map",
-    "static/js/2.95097971.chunk.js.LICENSE.txt": "/portfolio/static/js/2.95097971.chunk.js.LICENSE.txt",
+    "static/js/2.b5de99d6.chunk.js.LICENSE.txt": "/portfolio/static/js/2.b5de99d6.chunk.js.LICENSE.txt",
     "static/media/aboutThumb.png": "/portfolio/static/media/aboutThumb.f688f77a.png",
     "static/media/calculator-preview.png": "/portfolio/static/media/calculator-preview.b14b6c7b.png",
     "static/media/college-brochure-preview.png": "/portfolio/static/media/college-brochure-preview.63b0f729.png",
@@ -19,6 +19,7 @@
     "static/media/github-app-preview.png": "/portfolio/static/media/github-app-preview.3e17eee3.png",
     "static/media/link-harvester.png": "/portfolio/static/media/link-harvester.13f370c9.png",
     "static/media/logo.svg": "/portfolio/static/media/logo.ee7cd8ed.svg",
+    "static/media/pawtastic-mockup-preview.png": "/portfolio/static/media/pawtastic-mockup-preview.d7fb196f.png",
     "static/media/photo-album-preview.png": "/portfolio/static/media/photo-album-preview.dec367e7.png",
     "static/media/photogram-preview.png": "/portfolio/static/media/photogram-preview.9862d452.png",
     "static/media/projectThumb.png": "/portfolio/static/media/projectThumb.7721296a.png",
@@ -26,8 +27,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.209c2d7e.js",
-    "static/js/2.95097971.chunk.js",
+    "static/js/2.b5de99d6.chunk.js",
     "static/css/main.aee37114.chunk.css",
-    "static/js/main.6b1bb398.chunk.js"
+    "static/js/main.ccf7e7e8.chunk.js"
   ]
 }
