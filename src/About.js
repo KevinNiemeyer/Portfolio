@@ -13,6 +13,7 @@ const Container = styled.div`
   align-items: center;
   overflow-y: auto;
   overflow-x: hidden;
+  padding-bottom: 20px;
 `;
 
 const Wrapper = styled.div`
