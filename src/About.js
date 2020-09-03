@@ -71,7 +71,7 @@ function About(props) {
             Academy Frontend program. I then started working with a mentor who
             has been mentoring me for the past six months to improve my
             programming skills, learn the best practices in web development, and
-            become familiar with industry standards in with web development.{' '}
+            become familiar with industry standards in web development.{' '}
           </div>{' '}
           <div>
             Prior to transitioning to Web Development, I worked in the oil
