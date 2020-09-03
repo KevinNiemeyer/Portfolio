@@ -4,6 +4,7 @@ import styled from 'styled-components';
 import './App.css';
 import './';
 import pic from './assets/images/profile-pic.png';
+
 const Container = styled.div`
   position: relative;
   width: 100vw;
@@ -13,7 +14,7 @@ const Container = styled.div`
   align-items: center;
   overflow-y: auto;
   overflow-x: hidden;
-  padding-bottom: 20px;
+  height: auto;
 `;
 
 const Wrapper = styled.div`
