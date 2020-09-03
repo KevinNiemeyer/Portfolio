@@ -15,7 +15,6 @@ const Container = styled.div`
   overflow-y: auto;
   overflow-x: hidden;
   height: auto;
-  padding-bottom: 200px;
 `;
 
 const Wrapper = styled.div`
@@ -41,7 +40,7 @@ const P = styled.p`
   font-size: 1.5vw;
   text-align: justify;
   margin: -20px 50px 10px 30px;
-  height: 100%;
+  height: auto;
 `;
 
 const Pic = styled.img`
