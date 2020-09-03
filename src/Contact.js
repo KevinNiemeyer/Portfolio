@@ -7,9 +7,15 @@ const Container = styled.div`
   width: 100%;
   position: relative;
   display: flex;
+  justify-content: center;
+  align-items: center;
 `;
 function Contact(props) {
-  return <Container />;
+  return (
+    <Container>
+      <h1>Page Under Construction</h1>
+    </Container>
+  );
 }
 
 export default Contact;
