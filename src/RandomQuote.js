@@ -24,9 +24,7 @@ const RandomQuote = (props) => {
   useEffect(() => {
     try {
       getData();
-    } catch (e) {
-      console.log(e);
-    }
+    } catch (e) {}
   }, []);
 
   return (
