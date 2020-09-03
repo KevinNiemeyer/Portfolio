@@ -65,13 +65,13 @@ function About(props) {
           <div>
             I am a frontend developer with experience in JavaScript (ES6+),
             React, React Router, Styled-Components, SASS, SCSS, and other
-            frontend modules. I have experience working in a team environment
-            using Git and agile methodologies. I spent the last two years
-            teaching myself web development through freeCodeCamp and the Bov
-            Academy Frontend program. I then started working with a mentor who
-            has been mentoring me for the past six months to improve my
-            programming skills, learn the best practices in web development, and
-            become familiar with industry standards in web development.{' '}
+            frontend modules. I also have experience working in a team
+            environment using Git and Agile methodologies. I have spent the last
+            two years teaching myself web development through freeCodeCamp and
+            the Bov Academy Frontend program. I then started working with a
+            mentor who has been mentoring me for the past six months to improve
+            my programming skills, learn the best practices in web development,
+            and become familiar with industry standards in web development.{' '}
           </div>{' '}
           <div>
             Prior to transitioning to Web Development, I worked in the oil
