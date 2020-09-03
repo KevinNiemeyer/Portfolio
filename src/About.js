@@ -37,7 +37,7 @@ const Img = styled.div`
 `;
 
 const P = styled.p`
-  font-size: 1.5vw;
+  font-size: 1.25vw;
   text-align: justify;
   margin: -20px 50px 10px 30px;
   height: auto;
@@ -64,22 +64,24 @@ function About(props) {
         <P>
           <div>
             I am a frontend developer with experience in JavaScript (ES6+),
-            React, styled-components, SASS, SCSS, and other frontend modules. I
-            have experience working in a team environment using Git and agile
-            methodologies. I spent the last two years teaching myself web
-            development through the freeCodeCamp, and Bov Academy programs. I
-            then started working with a mentor who has been mentoring me for the
-            past six months, to improve my programming skills, project
-            management and understanding the best practices in web development
-            and in the workplace in general.{' '}
+            React, React Router, Styled-Components, SASS, SCSS, and other
+            frontend modules. I have experience working in a team environment
+            using Git and agile methodologies. I spent the last two years
+            teaching myself web development through freeCodeCamp and the Bov
+            Academy Frontend program. I then started working with a mentor who
+            has been mentoring me for the past six months to improve my
+            programming skills, learn the best practices in web development, and
+            become familiar with industry standards in with web development.{' '}
           </div>{' '}
           <div>
             Prior to transitioning to Web Development, I worked in the oil
-            industry in an automation engineering capacity. The web applications
-            we worked with were lacking in design and function, and I became
-            interested in Web Development after working alongside the in-house
-            developers to improve the application and make it more user
-            friendly. Prior to the Oil Industry, I was enlisted in the Air Force
+            industry as an automation engineer. The web applications I used with
+            were lacking in design and function, and I became interested in Web
+            Development after working alongside the in-house developers to
+            improve the application and make it more user-friendly.
+          </div>
+          <div>
+            Before working in the Oil Industry, I was enlisted in the Air Force
             as a Ground Radar Technician, which is where I acquired a strong
             foundation in Computer Science and related applications.
           </div>
