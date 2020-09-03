@@ -15,6 +15,7 @@ const Container = styled.div`
   overflow-y: auto;
   overflow-x: hidden;
   height: auto;
+  padding-bottom: 200px;
 `;
 
 const Wrapper = styled.div`
