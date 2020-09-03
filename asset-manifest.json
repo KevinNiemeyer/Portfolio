@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.aee37114.chunk.css",
-    "main.js": "/portfolio/static/js/main.bb3df454.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.bb3df454.chunk.js.map",
+    "main.js": "/portfolio/static/js/main.bd806a11.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.bd806a11.chunk.js.map",
     "runtime-main.js": "/portfolio/static/js/runtime-main.209c2d7e.js",
     "runtime-main.js.map": "/portfolio/static/js/runtime-main.209c2d7e.js.map",
-    "static/js/2.b5de99d6.chunk.js": "/portfolio/static/js/2.b5de99d6.chunk.js",
-    "static/js/2.b5de99d6.chunk.js.map": "/portfolio/static/js/2.b5de99d6.chunk.js.map",
+    "static/js/2.9b881169.chunk.js": "/portfolio/static/js/2.9b881169.chunk.js",
+    "static/js/2.9b881169.chunk.js.map": "/portfolio/static/js/2.9b881169.chunk.js.map",
     "index.html": "/portfolio/index.html",
-    "precache-manifest.64fa3365912a290c20550c3d7aebe593.js": "/portfolio/precache-manifest.64fa3365912a290c20550c3d7aebe593.js",
+    "precache-manifest.bc882b3954e5a1909973e5cc5334e3df.js": "/portfolio/precache-manifest.bc882b3954e5a1909973e5cc5334e3df.js",
     "service-worker.js": "/portfolio/service-worker.js",
     "static/css/main.aee37114.chunk.css.map": "/portfolio/static/css/main.aee37114.chunk.css.map",
-    "static/js/2.b5de99d6.chunk.js.LICENSE.txt": "/portfolio/static/js/2.b5de99d6.chunk.js.LICENSE.txt",
+    "static/js/2.9b881169.chunk.js.LICENSE.txt": "/portfolio/static/js/2.9b881169.chunk.js.LICENSE.txt",
     "static/media/aboutThumb.png": "/portfolio/static/media/aboutThumb.f688f77a.png",
     "static/media/calculator-preview.png": "/portfolio/static/media/calculator-preview.b14b6c7b.png",
     "static/media/college-brochure-preview.png": "/portfolio/static/media/college-brochure-preview.63b0f729.png",
@@ -22,13 +22,14 @@
     "static/media/pawtastic-mockup-preview.png": "/portfolio/static/media/pawtastic-mockup-preview.d7fb196f.png",
     "static/media/photo-album-preview.png": "/portfolio/static/media/photo-album-preview.dec367e7.png",
     "static/media/photogram-preview.png": "/portfolio/static/media/photogram-preview.9862d452.png",
+    "static/media/profile-pic.png": "/portfolio/static/media/profile-pic.2ce0726a.png",
     "static/media/projectThumb.png": "/portfolio/static/media/projectThumb.7721296a.png",
     "static/media/tic-tac-toe-preview.png": "/portfolio/static/media/tic-tac-toe-preview.fe630a78.png"
   },
   "entrypoints": [
     "static/js/runtime-main.209c2d7e.js",
-    "static/js/2.b5de99d6.chunk.js",
+    "static/js/2.9b881169.chunk.js",
     "static/css/main.aee37114.chunk.css",
-    "static/js/main.bb3df454.chunk.js"
+    "static/js/main.bd806a11.chunk.js"
   ]
 }
