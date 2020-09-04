@@ -48,7 +48,7 @@ const Pic = styled.img`
   min-width: 100%;
   min-height: 100%;
 `;
-
+//test
 function About(props) {
   return (
     <Container>
