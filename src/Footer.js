@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import BumperSticker from './BumperSticker';
 import './App.css';
 
 const Container = styled.div`
@@ -18,7 +19,12 @@ const Container = styled.div`
 `;
 
 function Footer(props) {
-  return <Container>@Kevin Niemeyer 2020</Container>;
+  return (
+    <Container>
+      @Kevin Niemeyer 2020
+      <BumperSticker></BumperSticker>
+    </Container>
+  );
 }
 
 export default Footer;
