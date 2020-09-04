@@ -45,7 +45,7 @@ const InstagramIcon = styled(SiInstagram)`
 function SocialIcons(props) {
   return (
     <Container>
-      <a href='#'>
+      <a href='https://www.facebook.com/kevin.niemeyer.1004'>
         <FBIcon />
       </a>
       <a href='https://twitter.com/kevinniemeyer2'>
