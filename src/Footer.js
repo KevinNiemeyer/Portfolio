@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import BumperSticker from './BumperSticker';
+import SocialIcons from './SocialIcons';
 import './App.css';
 
 const Container = styled.div`
@@ -18,10 +19,30 @@ const Container = styled.div`
   overflow: auto;
 `;
 
+const Email = styled.div`
+  font-size: 20px;
+  color: cornflowerblue;
+  width: 100%;
+  text-align: center;
+  
+  & a {
+    color: inherit;
+    transition: all .2s ease-in;
+    text-decoration: none;
+    &:hover {    
+      color: white;
+    }
+  
+`;
+
 function Footer(props) {
   return (
     <Container>
-      @Kevin Niemeyer 2020
+      <SocialIcons></SocialIcons>
+      <Email>
+        Email:{' '}
+        <a href='mailto:kevthedev2020@gmail.com'>kevthedev2020@gmail.com</a>
+      </Email>
       <BumperSticker></BumperSticker>
     </Container>
   );

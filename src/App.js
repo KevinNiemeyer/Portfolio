@@ -8,7 +8,6 @@ import Nav from './Nav';
 import Home from './Home.js';
 import Projects from './Projects.js';
 import About from './About.js';
-import Contact from './Contact';
 import Footer from './Footer';
 import NotFound from './NotFound';
 
@@ -36,7 +35,6 @@ function App() {
           <Route exact path='/portfolio' component={Home} />
           <Route exact path='/about' component={About} />
           <Route exact path='/projects' component={Projects} />
-          <Route exact path='/contact' component={Contact} />
           <Route path='/*' component={NotFound} />
         </Switch>
         <Footer />

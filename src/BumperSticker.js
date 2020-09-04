@@ -4,10 +4,12 @@ import './App.css';
 import { DiReact } from 'react-icons/di';
 import { IoIosHeart, IoIosDoneAll } from 'react-icons/io';
 const Container = styled.div`
-  font-size: 30px;
+  font-size: 24px;
   display: flex;
+  justify-content: center;
   align-items: center;
   overflow: hidden;
+  width: 100%;
 `;
 
 const HeartIcon = styled(IoIosHeart)`
@@ -45,7 +47,7 @@ const ReactIcon = styled(DiReact)`
 function BumperSticker(props) {
   return (
     <Container>
-      Made with <HeartIcon /> and <ReactIcon />
+      This site was made with <HeartIcon /> and <ReactIcon />
     </Container>
   );
 }

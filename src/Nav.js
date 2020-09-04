@@ -16,7 +16,7 @@ const Container = styled.div`
 
 const NavLinks = styled.ul`
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   list-style-type: none;
   width: 100%;
   margin: 0;
@@ -35,7 +35,7 @@ const StyledLink = styled(Link)`
   &:hover {
     color: white;
   }
-  padding: 0 10px;
+  padding: 0 50px;
   transition: all 0.3s;
 `;
 
@@ -47,7 +47,6 @@ function Nav(props) {
         <StyledLink to='/'>Home</StyledLink>
         <StyledLink to='/projects'>Projects</StyledLink>
         <StyledLink to='/about'>About Me</StyledLink>
-        <StyledLink to='/contact'>Contact</StyledLink>
       </NavLinks>
     </Container>
   );
