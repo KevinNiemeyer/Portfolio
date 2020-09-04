@@ -25,7 +25,7 @@ const Home = (props) => {
       <Wrapper>
         <Header
           name='Kevin Niemeyer'
-          subheading='Developer / Musician / Human'
+          subheading='Developer / Designer / Human'
           top='-3'
           left='5'
           scale='7'

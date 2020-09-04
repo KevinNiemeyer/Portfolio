@@ -7,6 +7,7 @@ const Container = styled.div`
   font-size: 30px;
   display: flex;
   align-items: center;
+  overflow: hidden;
 `;
 
 const HeartIcon = styled(IoIosHeart)`
@@ -30,7 +31,7 @@ const ReactIcon = styled(DiReact)`
   color: cornflowerblue;
   font-size: 125%;
   animation: spin 5s linear infinite;
-  padding: 10   px;
+  padding: 10px;
   @keyframes spin {
     0% {
         transform: rotate(0deg);
