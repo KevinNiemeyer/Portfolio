@@ -74,9 +74,9 @@ function About(props) {
           </div>{' '}
           <div>
             Prior to transitioning to Web Development, I worked in the oil
-            industry as an automation engineer. The web applications I used with
-            were lacking in design and function, and I became interested in Web
-            Development after working alongside the in-house developers to
+            industry as an automation engineer. The web applications I worked
+            with were lacking in design and function, and I became interested in
+            Web Development after working alongside the in-house developers to
             improve the application and make it more user-friendly.
           </div>
           <div>
