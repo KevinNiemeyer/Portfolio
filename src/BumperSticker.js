@@ -2,9 +2,9 @@ import React from 'react';
 import styled, { keyframes } from 'styled-components';
 import './App.css';
 import { DiReact } from 'react-icons/di';
-import { IoIosHeart, IoIosDoneAll } from 'react-icons/io';
+import { IoIosHeart } from 'react-icons/io';
 const Container = styled.div`
-  font-size: 24px;
+  font-size: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -15,7 +15,7 @@ const Container = styled.div`
 const HeartIcon = styled(IoIosHeart)`
   color: red;
   font-size: 125%;
-  padding: 5px;
+  padding: 0 5px;
   animation: pulse 1s linear infinite;
   @keyframes pulse {
     0% {
@@ -33,7 +33,7 @@ const ReactIcon = styled(DiReact)`
   color: cornflowerblue;
   font-size: 125%;
   animation: spin 5s linear infinite;
-  padding: 10px;
+  padding: 0 5px;
   @keyframes spin {
     0% {
         transform: rotate(0deg);

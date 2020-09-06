@@ -1,59 +1,70 @@
 import React from 'react';
 import styled from 'styled-components';
-import { SiTwitter, SiFacebook, SiInstagram } from 'react-icons/si';
 import './App.css';
 
 const Container = styled.div`
-  font-size: 30px;
-  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
   margin-left: 100px;
   width: 100%;
+  height: 100%;
 `;
 
-const FBIcon = styled(SiFacebook)`
-  color: rgb(59, 89, 152);
-  font-size: 75%;
-  margin: 0 20px 0 20px;
-  transition: all 0.2s ease-in-out;
+const Wrapper = styled.div`
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+  width: 40%;
+  height: 100%;
+`;
+
+const A = styled.a`
+  box-sizing: border-box;
+  font-size: 25px;
+  background-color: #d6cbd3;
+  display: flex;
+  width: 40px;
+  height: 40px;
+
+  margin: 0 15px;
+  border-radius: 8px;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: rgb(7, 119, 232);
+  box-shadow: 0px 2px 2px rgb(7, 119, 232, 1),
+    0px 3px 2px rgba(255, 255, 255, 0.7);
+  transition: all 0.1 s ease;
   &:hover {
-    transform: scale(1.25);
+    opacity: 0.9;
   }
-`;
-
-const TwitterIcon = styled(SiTwitter)`
-  color: rgb(29, 161, 242);
-  font-size: 75%;
-  margin: 0 20px 0 20px;
-  transition: all 0.2s ease-in-out;
-  &:hover {
-    transform: scale(1.25);
-  }
-`;
-
-const InstagramIcon = styled(SiInstagram)`
-  font-size: 50%;
-  padding: 5px;
-  border-radius: 10px;
-  background: linear-gradient(45deg, yellow, red, purple);
-  margin: 0 20px 0 20px;
-  transition: all 0.2s ease-in-out;
-  &:hover {
-    transform: scale(1.25);
+  &:active {
+    box-shadow: 0px 2px 0px rgb(7, 119, 232, 1), 0px 3px 6px rgba(0, 0, 0, 0.9),
+      inset 0px 1px 3px rgba(255, 255, 255, 0.7);
+    opacity: 1;
+    position: relative;
+    top: 1px;
   }
 `;
 
 function SocialIcons(props) {
   return (
     <Container>
-      <a href='https://www.facebook.com/kevin.niemeyer.1004'>
-        <FBIcon />
-      </a>
-      <a href='https://twitter.com/kevinniemeyer2'>
-        <TwitterIcon />
-      </a>
-      <a href='https://instagram.com/kevthedev2020'>
-        <InstagramIcon />
-      </a>
+      <h4 style={{ paddingBottom: '10px' }}>Follow me on social media:</h4>
+      <Wrapper>
+        <A href='https://www.facebook.com/kevin.niemeyer.1004'>
+          <i className='fab fa-facebook'></i>
+        </A>
+        <A href='https://twitter.com/kevinniemeyer2'>
+          <i className='fab fa-twitter'></i>
+        </A>
+        <A href='https://instagram.com/kevthedev2020'>
+          <i className='fab fa-instagram'></i>
+        </A>
+      </Wrapper>
     </Container>
   );
 }
