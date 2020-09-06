@@ -5,8 +5,7 @@ import './App.css';
 const Container = styled.div`
   display: flex;
   justify-content: center;
-  align-items: baseline;
-  margin-left: 100px;
+  align-items: center;
   width: 100%;
   height: 100%;
 `;
@@ -14,7 +13,6 @@ const Container = styled.div`
 const Wrapper = styled.div`
   position: relative;
   display: flex;
-  justify-content: space-between;
   align-items: center;
   overflow: hidden;
   width: 40%;
@@ -24,29 +22,31 @@ const Wrapper = styled.div`
 const A = styled.a`
   box-sizing: border-box;
   font-size: 25px;
-  background-color: #d6cbd3;
+  background-color: #252525;
   display: flex;
-  width: 40px;
-  height: 40px;
+  width: 50px;
+  height: 50px;
 
   margin: 0 15px;
-  border-radius: 8px;
+  border-radius: 50%;
   align-items: center;
   justify-content: center;
   text-decoration: none;
-  color: rgb(7, 119, 232);
-  box-shadow: 0px 2px 2px rgb(7, 119, 232, 1),
-    0px 3px 2px rgba(255, 255, 255, 0.7);
+  color: rgb(7, 119, 232, 0.8);
+  box-shadow: -1px -1px 3px rgba(255, 255, 255, 0.1),
+    2px 2px 6px rgba(0, 0, 0, 0.8);
   transition: all 0.1 s ease;
   &:hover {
-    opacity: 0.9;
+    box-shadow: -1px -1px 3px rgba(255, 255, 255, 0.1),
+      2px 2px 6px rgba(0, 0, 0, 0.8),
+      inset -2px -2px 10px rgba(255, 255, 255, 0.05),
+      inset 2px 2px 10px rgba(0, 0, 0, 0.5);
   }
   &:active {
-    box-shadow: 0px 2px 0px rgb(7, 119, 232, 1), 0px 3px 6px rgba(0, 0, 0, 0.9),
-      inset 0px 1px 3px rgba(255, 255, 255, 0.7);
-    opacity: 1;
-    position: relative;
-    top: 1px;
+    color: #00a1f1;
+    box-shadow: inset -1px -1px 3px rgba(255, 255, 255, 0.1),
+      inset 2px 2px 6px rgba(0, 0, 0, 0.8);
+    text-shadow: 0 0 5px #00a1f1, 0 0 30px #00a1f1;
   }
 `;
 
