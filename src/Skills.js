@@ -12,10 +12,12 @@ const Container = styled.div`
 
 const Divider = styled.div`
   width: 35px;
-  margin-top: 20px;
+  font-size: calc(0.035 * 33vw);
   height: 100%;
   display: flex;
+  margin-right: calc(0.005 * 100vw);
   align-items: center;
+  height: calc(80vh / 2);
   font-family: 'Orbitron', sans-serif;
   letter-spacing: 10px;
   font-weight: bold;
@@ -27,6 +29,7 @@ const rotated = {
   transformOrigin: 'center',
   transform: 'rotate(-90deg)',
 };
+
 function Skills(props) {
   return (
     <Container>

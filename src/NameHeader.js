@@ -55,7 +55,7 @@ const Subheading = styled.h3`
   text-align: right;
   font-size: calc(0.05 * 33vw);
   color: #555555;
-  padding: 10px 0;
+  padding: 10px 10px;
 `;
 
 function NameHeader(props) {

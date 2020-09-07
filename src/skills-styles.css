@@ -1,7 +1,7 @@
 .perspective-text {
 	color: white;
 	font-family: Arial;
-	font-size: 48px;
+	font-size: calc(0.08 * 33vw);
 	font-weight: 900;
 	letter-spacing: -2px;
 	text-transform: uppercase;
@@ -18,7 +18,7 @@ p {
 	margin: 0;
 	height: 50px;
 	line-height: 50px;
-	transition: all 0.5s ease-in-out;
+	transition: transform 0.5s ease-in-out;
 }
 
 .perspective-line:nth-child(odd) {
