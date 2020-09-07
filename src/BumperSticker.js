@@ -19,14 +19,15 @@ const HeartIcon = styled(IoIosHeart)`
   animation: pulse 1s linear infinite;
   @keyframes pulse {
     0% {
-        transform: scale(1);
+      transform: scale(1);
     }
     50% {
-        transform: scale(1.05);
+      transform: scale(1.05);
     }
     100% {
-        transform: scale(1);
+      transform: scale(1);
     }
+  }
 `;
 
 const ReactIcon = styled(DiReact)`
