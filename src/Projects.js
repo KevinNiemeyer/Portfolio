@@ -1,7 +1,7 @@
 //trying to get this to work on netlify
 
 import React from 'react';
-import Header from './Header.js';
+import NameHeader from './NameHeader.js';
 import Project from './Project.js';
 import styled from 'styled-components';
 
@@ -20,7 +20,7 @@ const Container = styled.div`
 function Projects(props) {
   return (
     <Container>
-      <Header left='3' top='3' scale='3' name='Projects' />
+      <NameHeader homeHeader='false' name='Projects' />
       <Project
         project_name='Photogram'
         git_url='https://github.com/KevinNiemeyer/photogram'

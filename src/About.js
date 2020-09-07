@@ -1,5 +1,5 @@
 import React from 'react';
-import Header from './Header.js';
+import NameHeader from './NameHeader.js';
 import styled from 'styled-components';
 import './App.css';
 import './';
@@ -51,7 +51,7 @@ const Pic = styled.img`
 function About(props) {
   return (
     <Container>
-      <Header left='3' top='3' scale='3' name='About Me' />
+      <NameHeader left='3' top='3' scale='3' name='About Me' />
       <Wrapper>
         <Img>
           <Pic

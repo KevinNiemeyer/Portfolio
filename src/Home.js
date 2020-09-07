@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import Header from './Header';
+import NameHeader from './NameHeader';
 import Skills from './Skills';
 import RandomQuote from './RandomQuote';
 import './App.css';
@@ -15,19 +15,18 @@ const Container = styled.div`
 `;
 const Wrapper = styled.div`
   display: flex;
-  width: 33%;
+  width: calc(100vw / 3);
+  height: 80vh;
 `;
 
 const Home = (props) => {
   return (
     <Container>
       <Wrapper>
-        <Header
+        <NameHeader
+          isHomeHeader={true}
           name='Kevin Niemeyer'
           subheading='Developer / Designer / Human'
-          top='-3'
-          left='5'
-          scale='7'
         />
       </Wrapper>
       <Wrapper>
