@@ -70,5 +70,3 @@ function NameHeader(props) {
 }
 
 export default NameHeader;
-
-//asdfasdfasdfasdf
