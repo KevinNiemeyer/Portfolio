@@ -53,7 +53,9 @@ const A = styled.a`
 function SocialIcons(props) {
   return (
     <Container>
-      <h4 style={{ paddingBottom: '10px' }}>Follow me on social media:</h4>
+      <h4 style={{ fontSize: '18px', color: 'cornflowerblue' }}>
+        Follow me on social media:
+      </h4>
       <Wrapper>
         <A href='https://www.facebook.com/kevin.niemeyer.1004'>
           <i className='fab fa-facebook'></i>
