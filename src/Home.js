@@ -9,7 +9,9 @@ const Container = styled.div`
   display: flex;
   flex-direction: row;
   align-items: flex-start;
-
+  margin: 0 auto;
+  margin-top: 50px;
+  padding: 0 20px 0 20px;
   height: 80vh;
   width: 100%;
 `;

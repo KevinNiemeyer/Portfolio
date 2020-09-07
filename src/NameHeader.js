@@ -4,7 +4,6 @@ import styled, { css } from 'styled-components';
 import './App.css';
 
 const Container = styled.div`
-  margin-left: 20px;
   width: 100%;
 `;
 

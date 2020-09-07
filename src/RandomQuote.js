@@ -5,9 +5,8 @@ import './App.css';
 import axios from 'axios';
 
 const Container = styled.div`
-  width: 80%;
-  font-size: 22px;
-  padding: 10px;
+  width: 100%;
+  font-size: calc(0.05 * 33vw);
 `;
 
 const RandomQuote = (props) => {
@@ -30,7 +29,6 @@ const RandomQuote = (props) => {
   return (
     <Container>
       <blockquote>
-        {/*{quote}*/}
         {quote}
         <footer>
           <cite>{author}</cite>

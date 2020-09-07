@@ -9,7 +9,7 @@ blockquote:before {
 	color: green;
 	font-family: Georgia, serif;
 	position: absolute;
-	font-size: 6em;
+	font-size: calc(0.3 * 33vw);
 	line-height: 1;
 	top: 0;
 	left: 0;
@@ -21,7 +21,7 @@ blockquote:after {
 	font-family: Georgia, serif;
 	position: absolute;
 	float: right;
-	font-size: 6em;
+	font-size: calc(0.3 * 33vw);
 	line-height: 1;
 	right: 0;
 	bottom: -0.5em;
