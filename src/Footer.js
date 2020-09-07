@@ -10,29 +10,27 @@ const Container = styled.div`
   left: 0;
   justify-content: center;
   align-items: center;
-  width: 100%;
-  height: 10%;
+  width: 100vw;
+  height: 10vh;
   display: flex;
   background-color: #252525;
-  font-size: 12px;
   color: lightgrey;
   overflow: auto;
 `;
 
 const Email = styled.div`
-  font-size: 20px;
+  font-size: calc(0.012 * 100vw);
   color: cornflowerblue;
   width: 100%;
   text-align: center;
-  
   & a {
     color: inherit;
-    transition: all .2s ease-in;
+    transition: all 0.2s ease-in;
     text-decoration: none;
-    &:hover {    
+    &:hover {
       color: white;
     }
-  
+  }
 `;
 
 function Footer(props) {

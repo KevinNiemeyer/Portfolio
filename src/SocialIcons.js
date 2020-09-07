@@ -21,12 +21,13 @@ const Wrapper = styled.div`
 
 const A = styled.a`
   box-sizing: border-box;
-  font-size: 25px;
+  font-size: 1.5rem;
   background-color: #252525;
   display: flex;
-  width: 50px;
-  height: 50px;
-
+  width: calc(0.09 * 100vw);
+  height: calc(0.03 * 100vw);
+  max-width: 100%;
+  max-height: 100%;
   margin: 0 15px;
   border-radius: 50%;
   align-items: center;
@@ -46,25 +47,27 @@ const A = styled.a`
     color: #00a1f1;
     box-shadow: inset -1px -1px 3px rgba(255, 255, 255, 0.1),
       inset 2px 2px 6px rgba(0, 0, 0, 0.8);
-    text-shadow: 0 0 5px #00a1f1, 0 0 30px #00a1f1;
   }
 `;
 
+const socialIcon = {
+  fontSize: 'calc(.016 * 100vw)',
+};
 function SocialIcons(props) {
   return (
     <Container>
-      <h4 style={{ fontSize: '18px', color: 'cornflowerblue' }}>
+      <h4 style={{ fontSize: 'calc(.009 * 100vw)', color: 'cornflowerblue' }}>
         Follow me on social media:
       </h4>
       <Wrapper>
         <A href='https://www.facebook.com/kevin.niemeyer.1004'>
-          <i className='fab fa-facebook'></i>
+          <i style={socialIcon} className='fab fa-facebook'></i>
         </A>
         <A href='https://twitter.com/kevinniemeyer2'>
-          <i className='fab fa-twitter'></i>
+          <i style={socialIcon} className='fab fa-twitter'></i>
         </A>
         <A href='https://instagram.com/kevthedev2020'>
-          <i className='fab fa-instagram'></i>
+          <i style={socialIcon} className='fab fa-instagram'></i>
         </A>
       </Wrapper>
     </Container>
