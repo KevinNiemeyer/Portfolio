@@ -1,7 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 import Logo from './Logo';
+import { DarkModeContext } from './App';
 import './App.css';
 
 const Container = styled.div`
@@ -11,6 +12,11 @@ const Container = styled.div`
   width: 100%;
   height: 10vh;
   display: flex;
+  ${(props) =>
+    props.isDarkMode &&
+    css`
+      background-color: #000000;
+    `}
   background-color: #252525;
 `;
 
@@ -41,14 +47,21 @@ const StyledLink = styled(Link)`
 
 function Nav(props) {
   return (
-    <Container>
-      <Logo x={35} y={0} w={50} h={40} />{' '}
-      <NavLinks className='navigation-sub'>
-        <StyledLink to='/'>Home</StyledLink>
-        <StyledLink to='/projects'>Projects</StyledLink>
-        <StyledLink to='/about'>About Me</StyledLink>
-      </NavLinks>
-    </Container>
+    <DarkModeContext.Consumer>
+      {(value) => {
+        console.log(value);
+        return (
+          <Container isDarkMode={value.isDarkMode}>
+            <Logo x={35} y={0} w={50} h={40} />{' '}
+            <NavLinks className='navigation-sub'>
+              <StyledLink to='/'>Home</StyledLink>
+              <StyledLink to='/projects'>Projects</StyledLink>
+              <StyledLink to='/about'>About Me</StyledLink>
+            </NavLinks>
+          </Container>
+        );
+      }}
+    </DarkModeContext.Consumer>
   );
 }
 

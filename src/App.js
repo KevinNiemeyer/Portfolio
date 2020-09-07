@@ -1,6 +1,6 @@
 // App.jsx
 
-import React from 'react';
+import React, { useState } from 'react';
 import { HashRouter as Router, Switch, Route } from 'react-router-dom';
 
 import styled from 'styled-components';
@@ -10,6 +10,8 @@ import Projects from './Projects.js';
 import About from './About.js';
 import Footer from './Footer';
 import NotFound from './NotFound';
+
+export const DarkModeContext = React.createContext();
 
 const Container = styled.div`
   position: relative;
@@ -25,21 +27,27 @@ const Container = styled.div`
 `;
 
 function App() {
+  const [isDarkMode, setIsDark] = useState(true);
   return (
-    <Router>
-      <Container>
-        <Nav />
-        <Switch>
-          <Route exact path='/' component={Home} />
-          <Route exact path='/home' component={Home} />
-          <Route exact path='/portfolio' component={Home} />
-          <Route exact path='/about' component={About} />
-          <Route exact path='/projects' component={Projects} />
-          <Route path='/*' component={NotFound} />
-        </Switch>
-        <Footer />
-      </Container>
-    </Router>
+    <DarkModeContext.Provider
+      value={{
+        isDarkMode: isDarkMode,
+      }}>
+      <Router>
+        <Container>
+          <Nav />
+          <Switch>
+            <Route exact path='/' component={Home} />
+            <Route exact path='/home' component={Home} />
+            <Route exact path='/portfolio' component={Home} />
+            <Route exact path='/about' component={About} />
+            <Route exact path='/projects' component={Projects} />
+            <Route path='/*' component={NotFound} />
+          </Switch>
+          <Footer />
+        </Container>
+      </Router>
+    </DarkModeContext.Provider>
   );
 }
 
