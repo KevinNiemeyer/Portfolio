@@ -31,7 +31,7 @@ const StyledLink = styled(Link)`
   display: inline;
   margin: 0.5em 0;
   font-family: Helvetica, Arial, sans-serif;
-  font-size: 1.25vw;
+  font-size: calc(0.015 * 100vw);
   &:hover {
     color: white;
   }
