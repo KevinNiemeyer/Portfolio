@@ -8,7 +8,6 @@ import './App.css';
 const Container = styled.div`
   display: flex;
   flex-direction: row;
-  margin-top: 5%;
   align-items: flex-start;
 
   height: 80vh;
@@ -16,7 +15,7 @@ const Container = styled.div`
 `;
 const Wrapper = styled.div`
   display: flex;
-  width: 50%;
+  width: 33%;
 `;
 
 const Home = (props) => {
