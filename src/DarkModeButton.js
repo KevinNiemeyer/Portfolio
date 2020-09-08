@@ -11,7 +11,8 @@ const Container = styled.div`
 `;
 
 const P = styled.p`
-  padding: 0 10px;
+  padding: 0 calc(0.01 * 100vw);
+  font-size: calc(0.01 * 100vw);
   color: #cccccc;
   ${(props) =>
     props.isdarkmode
@@ -27,23 +28,38 @@ const P = styled.p`
         `}
 `;
 
+const ThemeSwitchWrapper = styled.div`
+  display: flex;
+  align-items: center;
+`;
+const ThemeSwitch = styled.label`
+  display: inline-block;
+  height: 34px;
+  position: relative;
+  width: 60px;
+  & input {
+    display: none;
+  }
+`;
+//this still needs to be fixed so I don't have a CSS style sheet
+
 function DarkModeButton(props) {
   return (
     <DarkModeContext.Consumer>
       {(value) => {
         return (
           <Container>
-            <div class='theme-switch-wrapper'>
-              <label class='theme-switch' for='checkbox'>
+            <ThemeSwitchWrapper>
+              <ThemeSwitch for='checkbox'>
                 <input
                   onChange={props.toggleview}
                   type='checkbox'
                   id='checkbox'
                 />
-                <div class='slider round'></div>
-              </label>
+                <div className='slider round'></div>
+              </ThemeSwitch>
               <P isdarkmode={value.isDarkMode}></P>
-            </div>
+            </ThemeSwitchWrapper>
           </Container>
         );
       }}

@@ -33,7 +33,6 @@ const NavLinks = styled.ul`
   width: 100%;
   margin: 0;
   overflow: hidden;
-  padding: 5px;
 `;
 
 const StyledLink = styled(Link)`
@@ -47,7 +46,7 @@ const StyledLink = styled(Link)`
   &:hover {
     color: white;
   }
-  padding: 0 50px;
+  padding: 0 calc(0.015 * 100vw);
   transition: all 0.3s;
 `;
 
