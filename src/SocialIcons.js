@@ -22,7 +22,7 @@ const Wrapper = styled.div`
 const A = styled.a`
   box-sizing: border-box;
   font-size: 1.5rem;
-  background-color: #252525;
+  background-color: inherit;
   display: flex;
   width: calc(0.09 * 100vw);
   height: calc(0.03 * 100vw);
