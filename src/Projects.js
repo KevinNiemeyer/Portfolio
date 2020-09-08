@@ -9,12 +9,15 @@ import './App.css';
 
 const Container = styled.div`
   position: relative;
+  top: 10vh;
   width: 100vw;
   display: flex;
   flex-direction: column;
   overflow-y: auto;
   overflow-x: hidden;
-  margin-bottom: 10vh;
+  margin-bottom: 25vh;
+  padding: 0 40px;
+  padding-top: 5vh;
 `;
 
 function Projects(props) {

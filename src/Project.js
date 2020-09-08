@@ -15,7 +15,7 @@ const UL = styled.ul`
   list-style-type: none;
 `;
 const LI = styled.li`
-  padding: 20px;
+  padding: 20px 0;
   text-decoration: none;
 `;
 

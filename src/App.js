@@ -24,6 +24,7 @@ const Container = styled.div`
   padding: 0;
   transition: all 0.3s;
   max-height: 100vh;
+  overflow-y: hidden;
 `;
 
 function App() {
