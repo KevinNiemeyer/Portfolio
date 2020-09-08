@@ -48,7 +48,7 @@ function App() {
       }}>
       <Router>
         <Container>
-          <Nav />
+          <Nav toggleview={toggleView} />
           <Switch>
             <Route exact path='/' component={Home} />
             <Route exact path='/home' component={Home} />

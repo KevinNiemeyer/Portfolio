@@ -7,7 +7,9 @@ import DarkModeButton from './DarkModeButton';
 import './App.css';
 
 const Container = styled.div`
-  position: relative;
+  position: fixed;
+  top: 0;
+  left: 0;
   justify-content: center;
   align-items: center;
   width: 100%;
@@ -61,7 +63,9 @@ function Nav(props) {
               <StyledLink to='/projects'>Projects</StyledLink>
               <StyledLink to='/about'>About Me</StyledLink>
             </NavLinks>
-            <DarkModeButton>Dark Mode</DarkModeButton>
+            <DarkModeButton toggleview={props.toggleview}>
+              Dark Mode
+            </DarkModeButton>
           </Container>
         );
       }}

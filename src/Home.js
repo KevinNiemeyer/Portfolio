@@ -7,12 +7,12 @@ import { DarkModeContext } from './App';
 import './App.css';
 
 const Container = styled.div`
+  position: relative;
   display: flex;
   flex-direction: row;
   align-items: flex-start;
-  margin: 0 auto;
-  padding: 100px 20px 0 20px;
-  height: 80vh;
+  top: 10vh;
+  padding: 10vh 30px 0px 30px;
   width: 100%;
   ${(props) =>
     props.isdarkmode
@@ -27,6 +27,7 @@ const Wrapper = styled.div`
   display: flex;
   width: calc(100vw / 3);
   height: 80vh;
+  overflow-y: hidden;
 `;
 
 const Home = (props) => {

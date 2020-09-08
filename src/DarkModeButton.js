@@ -1,12 +1,30 @@
 import React from 'react';
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 import './App.css';
 import { DarkModeContext } from './App';
-const Container = styled.div``;
+import './darkModeButton.css';
 
-const Button = styled.button`
-  width: 50px;
-  height: 30px;
+const Container = styled.div`
+  display: flex;
+  justify-content: center;
+  width: 50%;
+`;
+
+const P = styled.p`
+  padding: 0 10px;
+  color: #cccccc;
+  ${(props) =>
+    props.isdarkmode
+      ? css`
+          :after {
+            content: 'Switch to light mode';
+          }
+        `
+      : css`
+          :after {
+            content: 'Switch to dark mode';
+          }
+        `}
 `;
 
 function DarkModeButton(props) {
@@ -15,7 +33,17 @@ function DarkModeButton(props) {
       {(value) => {
         return (
           <Container>
-            <Button id='darkMode' onClick={value.toggleView} />
+            <div class='theme-switch-wrapper'>
+              <label class='theme-switch' for='checkbox'>
+                <input
+                  onChange={props.toggleview}
+                  type='checkbox'
+                  id='checkbox'
+                />
+                <div class='slider round'></div>
+              </label>
+              <P isdarkmode={value.isDarkMode}></P>
+            </div>
           </Container>
         );
       }}
