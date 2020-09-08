@@ -1,7 +1,7 @@
 import React from 'react';
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
+import { DarkModeContext } from './App';
 import './App.css';
-import './skills-styles.css';
 
 const Container = styled.div`
   display: flex;
@@ -24,6 +24,79 @@ const Divider = styled.div`
   color: darkgrey;
 `;
 
+const PerspectiveText = styled.div`
+  ${(props) =>
+    props.isdarkmode
+      ? css`
+          color: #252525;
+        `
+      : css`
+          color: #cccccc;
+        `}
+  font-family: Arial;
+  font-size: calc(0.08 * 33vw);
+  font-weight: 900;
+  letter-spacing: -2px;
+  text-transform: uppercase;
+  &:hover p {
+    transform: translate(0, -50px);
+  }
+`;
+
+const PerspectiveLine = styled.div`
+  height: 50px;
+  overflow: hidden;
+  position: relative;
+  &:nth-child(odd) {
+    transform: skew(60deg, -30deg) scaleY(0.667);
+  }
+  &:nth-child(even) {
+    transform: skew(0deg, -30deg) scaleY(1.337);
+  }
+  &:nth-child(1) {
+    left: 29px;
+    ${(props) =>
+      props.isdarkmode
+        ? css`
+            color: #cccccc;
+          `
+        : css`
+            color: #252525;
+          `}
+  }
+  &:nth-child(2) {
+    left: 58px;
+    background: cornflowerblue;
+  }
+  &:nth-child(3) {
+    left: 87px;
+    background: green;
+  }
+  &:nth-child(4) {
+    left: 116px;
+    background: red;
+  }
+  &:nth-child(5) {
+    left: 145px;
+    ${(props) =>
+      props.isdarkmode
+        ? css`
+            color: #cccccc;
+          `
+        : css`
+            color: #252525;
+          `}
+  }
+`;
+
+const P = styled.p`
+  text-align: center;
+  margin: 0;
+  height: 50px;
+  line-height: 50px;
+  transition: transform 0.5s ease-in-out;
+`;
+
 const rotated = {
   height: '10px',
   transformOrigin: 'center',
@@ -32,34 +105,39 @@ const rotated = {
 
 function Skills(props) {
   return (
-    <Container>
-      <Divider>
-        <div style={rotated}>Skills:</div>
-      </Divider>
-      <div className='perspective-text'>
-        <div className='perspective-line'>
-          <p />
-          <p>React</p>
-        </div>
-        <div className='perspective-line'>
-          <p>React</p>
-          <p>JavaScript</p>
-        </div>
-        <div className='perspective-line'>
-          <p>JavaScript</p>
-          <p>CSS</p>
-        </div>
-        <div className='perspective-line'>
-          <p>CSS</p>
-          <p>HTML</p>
-        </div>
-        <div className='perspective-line'>
-          <p>HTML</p>
-          <p />
-        </div>
-      </div>
-    </Container>
+    <DarkModeContext.Consumer>
+      {(value) => {
+        return (
+          <Container>
+            <Divider>
+              <div style={rotated}>Skills:</div>
+            </Divider>
+            <PerspectiveText isdarkmode={value.isDarkMode}>
+              <PerspectiveLine isdarkmode={value.isDarkMode}>
+                <P />
+                <P>React</P>
+              </PerspectiveLine>
+              <PerspectiveLine isdarkmode={value.isDarkMode}>
+                <P>React</P>
+                <P>JavaScript</P>
+              </PerspectiveLine>
+              <PerspectiveLine isdarkmode={value.isDarkMode}>
+                <P>JavaScript</P>
+                <P>CSS</P>
+              </PerspectiveLine>
+              <PerspectiveLine isdarkmode={value.isDarkMode}>
+                <P>CSS</P>
+                <P>HTML</P>
+              </PerspectiveLine>
+              <PerspectiveLine isdarkmode={value.isDarkMode}>
+                <P>HTML</P>
+                <P />
+              </PerspectiveLine>
+            </PerspectiveText>
+          </Container>
+        );
+      }}
+    </DarkModeContext.Consumer>
   );
 }
-
 export default Skills;

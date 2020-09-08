@@ -1,6 +1,7 @@
 import React from 'react';
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 import { Link } from 'react-router-dom';
+
 import './App.css';
 
 const Container = styled.div`
@@ -20,7 +21,6 @@ function Logo(props) {
   const x = 5 + props.x;
   const y = 105 + props.y;
   return (
-    // Render a Thumbnail component
     <Container>
       <Link style={{ textDecoration: 'none' }} to='/'>
         <svg

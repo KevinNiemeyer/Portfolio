@@ -14,7 +14,7 @@ const Blockquote = styled.blockquote`
   ${(props) =>
     props.isdarkmode
       ? css`
-          color: #aaaaaa;
+          color: #cccccc;
         `
       : css`
           color: #151515;
