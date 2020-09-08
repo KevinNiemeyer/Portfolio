@@ -28,7 +28,7 @@ const Container = styled.div`
 
 const NavLinks = styled.ul`
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   list-style-type: none;
   width: 100%;
   margin: 0;
