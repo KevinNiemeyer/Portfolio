@@ -50,7 +50,7 @@ const ReactIcon = styled(DiReact)`
 function BumperSticker(props) {
   return (
     <Container>
-      This site was made with <HeartIcon /> and <ReactIcon />
+      This site was created with <HeartIcon /> and <ReactIcon />
     </Container>
   );
 }
