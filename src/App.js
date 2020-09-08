@@ -1,6 +1,6 @@
 // App.jsx
 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { HashRouter as Router, Switch, Route } from 'react-router-dom';
 
 import styled from 'styled-components';
@@ -27,11 +27,24 @@ const Container = styled.div`
 `;
 
 function App() {
-  const [isDarkMode, setIsDark] = useState(true);
+  const [isDarkMode, setIsDark] = useState(false);
+
+  const toggleView = () => {
+    // toggle isDark:
+    setIsDark(!isDarkMode);
+
+    localStorage.setItem('darkModeSetting', JSON.stringify(isDarkMode));
+  };
+
+  useEffect(() => {
+    const darkModeSetting = localStorage.getItem('darkModeSetting');
+    if (darkModeSetting) setIsDark(JSON.parse(darkModeSetting));
+  }, []);
   return (
     <DarkModeContext.Provider
       value={{
         isDarkMode: isDarkMode,
+        toggleView: toggleView,
       }}>
       <Router>
         <Container>

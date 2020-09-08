@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import styled, { css } from 'styled-components';
 import Logo from './Logo';
 import { DarkModeContext } from './App';
+import DarkModeButton from './DarkModeButton';
 import './App.css';
 
 const Container = styled.div`
@@ -12,12 +13,15 @@ const Container = styled.div`
   width: 100%;
   height: 10vh;
   display: flex;
+
   ${(props) =>
-    props.isDarkMode &&
-    css`
-      background-color: #000000;
-    `}
-  background-color: #252525;
+    props.isdarkmode
+      ? css`
+          background-color: #151515;
+        `
+      : css`
+          background-color: #353535;
+        `}
 `;
 
 const NavLinks = styled.ul`
@@ -37,7 +41,7 @@ const StyledLink = styled(Link)`
   display: inline;
   margin: 0.5em 0;
   font-family: Helvetica, Arial, sans-serif;
-  font-size: calc(0.015 * 100vw);
+  font-size: calc(0.013 * 100vw);
   &:hover {
     color: white;
   }
@@ -49,15 +53,15 @@ function Nav(props) {
   return (
     <DarkModeContext.Consumer>
       {(value) => {
-        console.log(value);
         return (
-          <Container isDarkMode={value.isDarkMode}>
+          <Container isdarkmode={value.isDarkMode}>
             <Logo x={35} y={0} w={50} h={40} />{' '}
             <NavLinks className='navigation-sub'>
               <StyledLink to='/'>Home</StyledLink>
               <StyledLink to='/projects'>Projects</StyledLink>
               <StyledLink to='/about'>About Me</StyledLink>
             </NavLinks>
+            <DarkModeButton>Dark Mode</DarkModeButton>
           </Container>
         );
       }}

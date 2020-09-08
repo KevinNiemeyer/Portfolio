@@ -10,6 +10,7 @@ const Container = styled.div`
   align-items: center;
   overflow: hidden;
   width: 100%;
+  color: cornflowerblue;
 `;
 
 const HeartIcon = styled(IoIosHeart)`

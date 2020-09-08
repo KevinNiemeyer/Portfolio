@@ -1,7 +1,8 @@
 import React from 'react';
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 import BumperSticker from './BumperSticker';
 import SocialIcons from './SocialIcons';
+import { DarkModeContext } from './App';
 import './App.css';
 
 const Container = styled.div`
@@ -13,9 +14,18 @@ const Container = styled.div`
   width: 100vw;
   height: 10vh;
   display: flex;
-  background-color: #252525;
+
   color: lightgrey;
   overflow: auto;
+
+  ${(props) =>
+    props.isdarkmode
+      ? css`
+          background-color: #151515;
+        `
+      : css`
+          background-color: #353535;
+        `}
 `;
 
 const Email = styled.div`
@@ -35,15 +45,22 @@ const Email = styled.div`
 
 function Footer(props) {
   return (
-    <Container>
-      <SocialIcons></SocialIcons>
-      <Email>
-        Email:{' '}
-        <a href='mailto:kevthedev2020@gmail.com'>kevthedev2020@gmail.com</a>
-      </Email>
-      <BumperSticker></BumperSticker>
-    </Container>
+    <DarkModeContext.Consumer>
+      {(value) => {
+        return (
+          <Container isdarkmode={value.isDarkMode}>
+            <SocialIcons></SocialIcons>
+            <Email>
+              Email:{' '}
+              <a href='mailto:kevthedev2020@gmail.com'>
+                kevthedev2020@gmail.com
+              </a>
+            </Email>
+            <BumperSticker></BumperSticker>
+          </Container>
+        );
+      }}
+    </DarkModeContext.Consumer>
   );
 }
-
 export default Footer;

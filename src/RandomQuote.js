@@ -1,12 +1,60 @@
 import React, { useState, useEffect } from 'react';
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 import './random-quote-styles.css';
+import { DarkModeContext } from './App';
 import './App.css';
 import axios from 'axios';
 
 const Container = styled.div`
   width: 100%;
   font-size: calc(0.05 * 33vw);
+`;
+
+const Blockquote = styled.blockquote`
+  ${(props) =>
+    props.isdarkmode
+      ? css`
+          color: #aaaaaa;
+        `
+      : css`
+          color: #151515;
+        `}
+
+  font-family: Georgia, serif;
+  position: relative;
+  margin: 0.3em;
+  padding: 0.5em 2em 0.5em 3em;
+  &:before {
+    color: green;
+    font-family: Georgia, serif;
+    position: absolute;
+    font-size: calc(0.3 * 33vw);
+    line-height: 1;
+    top: 0;
+    left: 0;
+    content: '\201C';
+  }
+  &:after {
+    color: green;
+    font-family: Georgia, serif;
+    position: absolute;
+    float: right;
+    font-size: calc(0.3 * 33vw);
+    line-height: 1;
+    right: 0;
+    bottom: -0.5em;
+    content: '\201D';
+  }
+`;
+
+const Footer = styled.footer`
+  margin-top: 1.5em;
+  padding: 0 2em 0 0;
+  text-align: right;
+`;
+
+const Cite = styled.cite`
+  content: '\2013';
 `;
 
 const RandomQuote = (props) => {
@@ -27,14 +75,21 @@ const RandomQuote = (props) => {
   }, []);
 
   return (
-    <Container>
-      <blockquote>
-        {quote}
-        <footer>
-          <cite>{author}</cite>
-        </footer>
-      </blockquote>
-    </Container>
+    <DarkModeContext.Consumer>
+      {(value) => {
+        console.log(value.isDarkMode);
+        return (
+          <Container>
+            <Blockquote isdarkmode={value.isDarkMode}>
+              {quote}
+              <Footer>
+                <Cite>{author}</Cite>
+              </Footer>
+            </Blockquote>
+          </Container>
+        );
+      }}
+    </DarkModeContext.Consumer>
   );
 };
 

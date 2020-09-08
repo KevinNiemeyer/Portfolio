@@ -1,4 +1,5 @@
 import React from 'react';
+import { DarkModeContext } from './App';
 import styled, { css } from 'styled-components';
 
 import './App.css';
@@ -13,7 +14,6 @@ const Heading = styled.h1`
   font-size: ${(props) =>
     props.isHomeHeader ? css`calc(.18 * 33vw)` : css`calc(.10 * 33vw)`};
   text-shadow: 1px 1px 3px #3f7fbf;
-  mix-blend-mode: screen;
   animation: fadeIn 2.5s linear forwards;
   animation: color-change 30s infinite;
   @keyframes fadeIn {
@@ -54,18 +54,31 @@ const Subheading = styled.h3`
   width: 100%;
   text-align: right;
   font-size: calc(0.05 * 33vw);
-  color: #555555;
   padding: 10px 10px;
+  ${(props) =>
+    props.isdarkmode
+      ? css`
+          color: #aaaaaa;
+        `
+      : css`
+          color: #252525;
+        `}
 `;
 
 function NameHeader(props) {
-  console.log(props);
   return (
-    <Container>
-      <Heading isHomeHeader={props.isHomeHeader}>{props.name}</Heading>
-      <Subheading>{props.subheading}</Subheading>
-    </Container>
+    <DarkModeContext.Consumer>
+      {(value) => {
+        return (
+          <Container>
+            <Heading isHomeHeader={props.isHomeHeader}>{props.name}</Heading>
+            <Subheading isdarkmode={value.isDarkMode}>
+              {props.subheading}
+            </Subheading>
+          </Container>
+        );
+      }}
+    </DarkModeContext.Consumer>
   );
 }
-
 export default NameHeader;
