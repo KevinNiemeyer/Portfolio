@@ -32,15 +32,15 @@ function App() {
 
   const toggleView = () => {
     // toggle isDark:
+    localStorage.setItem('darkModeSetting', !isDarkMode);
     setIsDark(!isDarkMode);
-
-    localStorage.setItem('darkModeSetting', JSON.stringify(isDarkMode));
   };
 
   useEffect(() => {
     const darkModeSetting = localStorage.getItem('darkModeSetting');
     if (darkModeSetting) setIsDark(JSON.parse(darkModeSetting));
   }, []);
+
   return (
     <DarkModeContext.Provider
       value={{

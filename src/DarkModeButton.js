@@ -47,10 +47,11 @@ function DarkModeButton(props) {
   return (
     <DarkModeContext.Consumer>
       {(value) => {
+        console.log(value.isDarkMode);
         return (
           <Container>
             <ThemeSwitchWrapper>
-              <ThemeSwitch for='checkbox'>
+              <ThemeSwitch htmlFor='checkbox'>
                 <input
                   onChange={props.toggleview}
                   type='checkbox'

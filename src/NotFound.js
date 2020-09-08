@@ -12,7 +12,6 @@ const Container = styled.div`
   display: flex;
 `;
 function NotFound(props) {
-  console.log(props);
   return (
     <Container>
       <h1>{props.location.pathname} Page Not Found </h1>

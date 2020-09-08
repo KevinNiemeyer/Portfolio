@@ -77,7 +77,6 @@ const RandomQuote = (props) => {
   return (
     <DarkModeContext.Consumer>
       {(value) => {
-        console.log(value.isDarkMode);
         return (
           <Container>
             <Blockquote isdarkmode={value.isDarkMode}>
