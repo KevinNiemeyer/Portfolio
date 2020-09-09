@@ -61,22 +61,29 @@ const RandomQuote = (props) => {
   const [quote, setQuote] = useState([]);
   const [author, setAuthor] = useState([]);
   const getData = () => {
-    var config = {
-      headers: { 'Access-Control-Allow-Origin': '*' },
-    };
     const url =
       'https://api.forismatic.com/api/1.0/?method=getQuote&lang=en&format=json';
-    axios.get(url, config).then((response) => {
-      if (response.data.quoteText) {
-        setQuote(response.data.quoteText);
-      } else
-        setQuote(
-          'Good actions give strength to ourselves and inspire good actions in others.'
-        );
-      if (response.data.quoteAuthor) {
-        setAuthor(response.data.quoteAuthor);
-      } else setAuthor('-Plato');
-    });
+    axios
+      .get(url, {
+        headers: {
+          'Access-Control-Allow-Origin': '*',
+        },
+        proxy: {
+          host: '104.236.174.88',
+          port: 3128,
+        },
+      })
+      .then((response) => {
+        if (response.data.quoteText) {
+          setQuote(response.data.quoteText);
+        } else
+          setQuote(
+            'Good actions give strength to ourselves and inspire good actions in others.'
+          );
+        if (response.data.quoteAuthor) {
+          setAuthor(response.data.quoteAuthor);
+        } else setAuthor('Plato');
+      });
   };
   useEffect(() => {
     try {
