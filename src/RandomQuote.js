@@ -61,9 +61,12 @@ const RandomQuote = (props) => {
   const [quote, setQuote] = useState([]);
   const [author, setAuthor] = useState([]);
   const getData = () => {
+    var config = {
+      headers: { 'Access-Control-Allow-Origin': '*' },
+    };
     const url =
       'https://api.forismatic.com/api/1.0/?method=getQuote&lang=en&format=json';
-    axios.get(url).then((response) => {
+    axios.get(url, config).then((response) => {
       if (response.data.quoteText) {
         setQuote(response.data.quoteText);
       } else

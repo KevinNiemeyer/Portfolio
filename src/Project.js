@@ -106,10 +106,7 @@ function Project(props) {
                 <div style={{ marginLeft: '5px' }}>
                   <A href={props.live_url}>
                     <Demo isdarkmode={value.isDarkMode}>Live Demo:</Demo>
-                    <Img
-                      src={require(`${props.img_src}`)}
-                      alt={props.project_name}
-                    />
+                    <Img src={`${props.img_src}`} alt={props.project_name} />
                   </A>
                 </div>
               </LI>
