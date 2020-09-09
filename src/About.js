@@ -91,12 +91,17 @@ function About(props) {
                   for the past six months to improve my programming skills,
                   learn the best practices in web development, and become
                   familiar with industry standards in web development.{' '}
-                </div>{' '}
+                </div>
                 <div>
                   Before my career in the oil industry, I was enlisted in the
                   Air Force as a Ground Radar Technician, which is where I
                   acquired a strong foundation in Computer Science and related
                   applications.
+                </div>
+                <div>
+                  When I'm not developing, I enjoy spending time with my wife
+                  and 4 children, writing and recording music, reading sci-fi
+                  novels, woodworking, and learning new languages.
                 </div>
               </P>
             </Wrapper>
