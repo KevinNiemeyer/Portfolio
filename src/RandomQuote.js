@@ -74,15 +74,19 @@ const RandomQuote = (props) => {
         },
       })
       .then((response) => {
-        if (response.data.quoteText) {
+        if (response.data.quoteText !== '') {
           setQuote(response.data.quoteText);
-        } else
+          if (response.data.quoteAuthor === '') {
+            setAuthor('Unknown');
+          } else {
+            setAuthor(response.data.quoteAuthor);
+          }
+        } else {
           setQuote(
             'Good actions give strength to ourselves and inspire good actions in others.'
           );
-        if (response.data.quoteAuthor) {
-          setAuthor(response.data.quoteAuthor);
-        } else setAuthor('Plato');
+          setAuthor('Plato');
+        }
       });
   };
   useEffect(() => {
