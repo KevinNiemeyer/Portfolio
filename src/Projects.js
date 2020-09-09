@@ -71,8 +71,7 @@ function Projects(props) {
               project_name='Calculator'
               git_url='https://github.com/KevinNiemeyer/calculator'
               live_url='https://kevinniemeyer.github.io/calculator/'
-              description='My first Bov Academy project using only HTML, CSS, and JavaScript. This was an attempt to clone the iPhone calculator.'
-              img_src='#'></Project>
+              description='My first Bov Academy project using only HTML, CSS, and JavaScript. This was an attempt to clone the iPhone calculator.'></Project>
 
             <Project
               project_name='College Brochure'
