@@ -4,7 +4,7 @@ import styled, { css } from 'styled-components';
 import { DarkModeContext } from './App';
 import './App.css';
 import './';
-import pic from './assets/images/profile-pic.png';
+import pic from './assets/images/profile-pic.PNG';
 
 const Container = styled.div`
   ${(props) =>
