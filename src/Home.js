@@ -40,7 +40,7 @@ const Home = (props) => {
               <NameHeader
                 isHomeHeader={true}
                 name='Kevin Niemeyer'
-                subheading='Developer / Designer / Human'
+                subheading='Developer / Designer / Programmer'
               />
             </Wrapper>
             <Wrapper>
