@@ -75,7 +75,7 @@ const RandomQuote = (props) => {
       })
       .then((response) => {
         console.log(response.data.quoteText);
-        if (response.data.quoteText !== '') {
+        if (response.data.quoteText !== undefined) {
           setQuote(response.data.quoteText);
           if (response.data.quoteAuthor === '') {
             setAuthor('Unknown');
