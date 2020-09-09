@@ -91,7 +91,7 @@ function Projects(props) {
             <Project
               project_name='Pawtastic Site Mockup'
               git_url='https://codepen.io/KevinNiemeyer/pen/pooEQWo'
-              live_url=''
+              live_url='https://codepen.io/KevinNiemeyer/pen/pooEQWo'
               description='Just a site that I mocked up to strengthen my HTML/CSS skills'
               img_src='../assets/images/pawtastic-mockup-preview.PNG'></Project>
           </Container>
