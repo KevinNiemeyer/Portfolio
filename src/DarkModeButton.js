@@ -47,7 +47,6 @@ function DarkModeButton(props) {
   return (
     <DarkModeContext.Consumer>
       {(value) => {
-        console.log(value.isDarkMode);
         return (
           <Container>
             <ThemeSwitchWrapper>

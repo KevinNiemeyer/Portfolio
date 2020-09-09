@@ -108,9 +108,10 @@ const RandomQuote = (props) => {
         return (
           <Container>
             <Blockquote isdarkmode={value.isDarkMode}>
-              {quote}
+              {quote ||
+                'Good actions give strength to ourselves and inspire good actions in others.'}
               <Footer>
-                <Cite>{author}</Cite>
+                <Cite>{author || 'Plato'}</Cite>
               </Footer>
             </Blockquote>
           </Container>
