@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.d31b78fb.chunk.css",
-    "main.js": "/portfolio/static/js/main.c0588e61.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.c0588e61.chunk.js.map",
+    "main.js": "/portfolio/static/js/main.0ad3c095.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.0ad3c095.chunk.js.map",
     "runtime-main.js": "/portfolio/static/js/runtime-main.209c2d7e.js",
     "runtime-main.js.map": "/portfolio/static/js/runtime-main.209c2d7e.js.map",
-    "static/js/2.e93fcaa7.chunk.js": "/portfolio/static/js/2.e93fcaa7.chunk.js",
-    "static/js/2.e93fcaa7.chunk.js.map": "/portfolio/static/js/2.e93fcaa7.chunk.js.map",
+    "static/js/2.6fc48071.chunk.js": "/portfolio/static/js/2.6fc48071.chunk.js",
+    "static/js/2.6fc48071.chunk.js.map": "/portfolio/static/js/2.6fc48071.chunk.js.map",
     "index.html": "/portfolio/index.html",
-    "precache-manifest.ff89b1ea47837d126d74734bbf8983cd.js": "/portfolio/precache-manifest.ff89b1ea47837d126d74734bbf8983cd.js",
+    "precache-manifest.74ec97fd62738a69aecaeaa30916e53c.js": "/portfolio/precache-manifest.74ec97fd62738a69aecaeaa30916e53c.js",
     "service-worker.js": "/portfolio/service-worker.js",
     "static/css/main.d31b78fb.chunk.css.map": "/portfolio/static/css/main.d31b78fb.chunk.css.map",
-    "static/js/2.e93fcaa7.chunk.js.LICENSE.txt": "/portfolio/static/js/2.e93fcaa7.chunk.js.LICENSE.txt",
+    "static/js/2.6fc48071.chunk.js.LICENSE.txt": "/portfolio/static/js/2.6fc48071.chunk.js.LICENSE.txt",
     "static/media/calculator-preview.PNG": "/portfolio/static/media/calculator-preview.b14b6c7b.PNG",
     "static/media/college-brochure-preview.PNG": "/portfolio/static/media/college-brochure-preview.63b0f729.PNG",
     "static/media/developer-news-io-preview.PNG": "/portfolio/static/media/developer-news-io-preview.8777ab63.PNG",
@@ -19,14 +19,13 @@
     "static/media/link-harvester.PNG": "/portfolio/static/media/link-harvester.13f370c9.PNG",
     "static/media/pawtastic-mockup-preview.PNG": "/portfolio/static/media/pawtastic-mockup-preview.d7fb196f.PNG",
     "static/media/photo-album-preview.PNG": "/portfolio/static/media/photo-album-preview.dec367e7.PNG",
-    "static/media/photogram-preview.PNG": "/portfolio/static/media/photogram-preview.9862d452.PNG",
     "static/media/profile-pic.PNG": "/portfolio/static/media/profile-pic.2ce0726a.PNG",
     "static/media/tic-tac-toe-preview.PNG": "/portfolio/static/media/tic-tac-toe-preview.fe630a78.PNG"
   },
   "entrypoints": [
     "static/js/runtime-main.209c2d7e.js",
-    "static/js/2.e93fcaa7.chunk.js",
+    "static/js/2.6fc48071.chunk.js",
     "static/css/main.d31b78fb.chunk.css",
-    "static/js/main.c0588e61.chunk.js"
+    "static/js/main.0ad3c095.chunk.js"
   ]
 }
