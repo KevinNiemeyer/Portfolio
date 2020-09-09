@@ -41,7 +41,7 @@ function Projects(props) {
               git_url='https://github.com/KevinNiemeyer/photogram'
               live_url='https://kevinniemeyer.github.io/photogram/'
               description='Instagram clone that consumes the Unsplash API to display and search photos on Unsplash. Created with create-react-app using React Router, Hooks, Styled Components, Context, Link, and Infinite Scroll modules.'
-              img_src='../assets/images/photogram-preview..PNG'></Project>
+              img_src='../assets/images/photogram-preview.PNG'></Project>
             <Project
               project_name='GitHub Profile App'
               git_url='https://github.com/KevinNiemeyer/github-app'
