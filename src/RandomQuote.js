@@ -61,34 +61,25 @@ const RandomQuote = (props) => {
   const [quote, setQuote] = useState([]);
   const [author, setAuthor] = useState([]);
   const getData = () => {
+    const proxyurl = 'https://cors-anywhere.herokuapp.com/';
     const url =
       'https://api.forismatic.com/api/1.0/?method=getQuote&lang=en&format=json';
-    axios
-      .get(url, {
-        headers: {
-          'Access-Control-Allow-Origin': '*',
-        },
-        proxy: {
-          host: '104.236.174.88',
-          port: 3128,
-        },
-      })
-      .then((response) => {
-        console.log(response.data.quoteText);
-        if (response.data.quoteText !== undefined) {
-          setQuote(response.data.quoteText);
-          if (response.data.quoteAuthor === '') {
-            setAuthor('Unknown');
-          } else {
-            setAuthor(response.data.quoteAuthor);
-          }
+    axios.get(proxyurl + url).then((response) => {
+      console.log(response.data.quoteText);
+      if (response.data.quoteText !== undefined) {
+        setQuote(response.data.quoteText);
+        if (response.data.quoteAuthor === '') {
+          setAuthor('Unknown');
         } else {
-          setQuote(
-            'Good actions give strength to ourselves and inspire good actions in others.'
-          );
-          setAuthor('Plato');
+          setAuthor(response.data.quoteAuthor);
         }
-      });
+      } else {
+        setQuote(
+          'Good actions give strength to ourselves and inspire good actions in others.'
+        );
+        setAuthor('Plato');
+      }
+    });
   };
   useEffect(() => {
     try {
