@@ -93,14 +93,6 @@ function About(props) {
                   familiar with industry standards in web development.{' '}
                 </div>{' '}
                 <div>
-                  Prior to transitioning to Web Development, I worked in the oil
-                  industry as an automation engineer. The web applications I
-                  worked with were lacking in design and function, and I became
-                  interested in Web Development after working alongside the
-                  in-house developers to improve the application and make it
-                  more user-friendly.
-                </div>
-                <div>
                   Before my career in the oil industry, I was enlisted in the
                   Air Force as a Ground Radar Technician, which is where I
                   acquired a strong foundation in Computer Science and related
@@ -116,3 +108,12 @@ function About(props) {
 }
 
 export default About;
+
+/*                <div>
+                  Prior to transitioning to Web Development, I worked in the oil
+                  industry as an automation engineer. I felt that the web applications I
+                  worked with could be improved upon, and I became
+                  interested in Web Development after working alongside the
+                  in-house developers to improve the application and make it
+                  more user-friendly.
+                </div>*/
