@@ -5,7 +5,7 @@ import NameHeader from './NameHeader.js';
 import Project from './Project.js';
 import { DarkModeContext } from './App';
 import styled, { css } from 'styled-components';
-//import pic1 from './assets/images/photogram-preview.PNG';
+import pic1 from './assets/images/photogram-preview.PNG';
 import pic2 from './assets/images/github-app-preview.PNG';
 import pic3 from './assets/images/link-harvester.PNG';
 import pic4 from './assets/images/tic-tac-toe-preview.PNG';
@@ -50,7 +50,7 @@ function Projects(props) {
               git_url='https://github.com/KevinNiemeyer/photogram'
               live_url='https://kevinniemeyer.github.io/photogram/'
               description='Instagram clone that consumes the Unsplash API to display and search photos on Unsplash. Created with create-react-app using React Router, Hooks, Styled Components, Context, Link, and Infinite Scroll modules.'
-              img_src='./assets/images/photogram-preview.PNG'></Project>
+              img_src={pic1}></Project>
             <Project
               project_name='GitHub Profile App'
               git_url='https://github.com/KevinNiemeyer/github-app'
