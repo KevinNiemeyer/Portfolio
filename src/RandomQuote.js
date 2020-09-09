@@ -64,14 +64,27 @@ const RandomQuote = (props) => {
     const url =
       'https://api.forismatic.com/api/1.0/?method=getQuote&lang=en&format=json';
     axios.get(url).then((response) => {
-      setQuote(response.data.quoteText);
-      setAuthor(response.data.quoteAuthor);
+      if (response.data.quoteText) {
+        setQuote(response.data.quoteText);
+      } else
+        setQuote(
+          'Good actions give strength to ourselves and inspire good actions in others.'
+        );
+      if (response.data.quoteAuthor) {
+        setAuthor(response.data.quoteAuthor);
+      } else setAuthor('-Plato');
     });
   };
   useEffect(() => {
     try {
       getData();
     } catch (e) {}
+    const interval = setInterval(() => {
+      try {
+        getData();
+      } catch (e) {}
+    }, 10000);
+    return () => clearInterval(interval);
   }, []);
 
   return (
