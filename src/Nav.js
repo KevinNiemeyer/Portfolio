@@ -13,7 +13,7 @@ const Container = styled.div`
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 10vh;
+  height: 60px;
   display: flex;
 
   ${(props) =>
@@ -42,7 +42,7 @@ const StyledLink = styled(Link)`
   display: inline;
   margin: 0.5em 0;
   font-family: Helvetica, Arial, sans-serif;
-  font-size: calc(0.013 * 100vw);
+  font-size: 20px;
   &:hover {
     color: white;
   }

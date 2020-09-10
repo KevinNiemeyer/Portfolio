@@ -64,22 +64,26 @@ const RandomQuote = (props) => {
     const proxyurl = 'https://cors-anywhere.herokuapp.com/';
     const url =
       'https://api.forismatic.com/api/1.0/?method=getQuote&lang=en&format=json';
-    axios.get(proxyurl + url).then((response) => {
-      console.log(response.data.quoteText);
-      if (response.data.quoteText !== undefined) {
-        setQuote(response.data.quoteText);
-        if (response.data.quoteAuthor === '') {
-          setAuthor('Unknown');
+    axios
+      .get(proxyurl + url)
+      .then((response) => {
+        if (response.data.quoteText !== undefined) {
+          setQuote(response.data.quoteText);
+          if (response.data.quoteAuthor === '') {
+            setAuthor('Unknown');
+          } else {
+            setAuthor(response.data.quoteAuthor);
+          }
         } else {
-          setAuthor(response.data.quoteAuthor);
+          setQuote(
+            'Good actions give strength to ourselves and inspire good actions in others.'
+          );
+          setAuthor('Plato');
         }
-      } else {
-        setQuote(
-          'Good actions give strength to ourselves and inspire good actions in others.'
-        );
-        setAuthor('Plato');
-      }
-    });
+      })
+      .catch(() =>
+        console.log(`Can't access ${url} response. Blocked by Browser?`)
+      );
   };
   useEffect(() => {
     try {

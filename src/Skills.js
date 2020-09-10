@@ -8,6 +8,12 @@ const Container = styled.div`
   justify-content: flex-end;
   align-items: flex-start;
   margin-top: 15%;
+
+  @media only screen and (min-width: 1224px) {
+  }
+  @media only screen and (min-device-width: 768px) and (max-width: 1000px) {
+    width: 100%;
+  }
 `;
 
 const Divider = styled.div`

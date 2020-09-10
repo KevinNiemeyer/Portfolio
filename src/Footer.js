@@ -6,14 +6,14 @@ import { DarkModeContext } from './App';
 import './App.css';
 
 const Container = styled.div`
+  display: flex;
   position: fixed;
   bottom: 0;
   left: 0;
   justify-content: center;
   align-items: center;
   width: 100vw;
-  height: 10vh;
-  display: flex;
+  height: 75px;
 
   color: lightgrey;
   overflow: auto;

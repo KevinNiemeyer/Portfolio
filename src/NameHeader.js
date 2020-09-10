@@ -9,13 +9,19 @@ const Container = styled.div`
 `;
 
 const Heading = styled.h1`
-  text-align: left;
   font-family: 'Orbitron', sans-serif;
   font-size: ${(props) =>
     props.isHomeHeader ? css`calc(.18 * 33vw)` : css`calc(.10 * 33vw)`};
   text-shadow: 1px 1px 3px #3f7fbf;
   animation: fadeIn 2.5s linear forwards;
   animation: color-change 30s infinite;
+  @media only screen and (min-width: 1224px) {
+    text-align: left;
+  }
+  @media only screen and (min-device-width: 768px) and (max-width: 1000px) {
+    text-align: center;
+  }
+
   @keyframes fadeIn {
     0% {
       opacity: 0;
@@ -52,9 +58,16 @@ const Heading = styled.h1`
 
 const Subheading = styled.h3`
   width: 100%;
-  text-align: right;
   font-size: calc(0.05 * 33vw);
   padding: 10px 10px;
+
+  @media only screen and (min-width: 1000px) {
+    text-align: right;
+  }
+  @media only screen and (min-device-width: 768px) and (max-width: 1000px) {
+    text-align: center;
+  }
+
   ${(props) =>
     props.isdarkmode
       ? css`
