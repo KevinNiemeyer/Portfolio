@@ -33,37 +33,22 @@ const Container = styled.div`
   position: relative;
   width: 100vw;
   display: flex;
-  top: 60px;
+  top: 55px;
+  overflow-y: hidden;
   @media only screen and (min-width: 1000px) {
     flex-direction: row;
-    padding: 0 30px 100px; 30px;
+    padding: 0 30px 100px 30px;
     align-items: flex-start;
   }
-  @media only screen and (min-device-width: 768px) and (max-width: 1000px) {
+  @media only screen and (min-device-width: 320px) and (max-width: 1000px) {
     flex-direction: column;
     align-items: center;
     height: 100vh;
+    margin-bottom: 17vh;
+    overflow-x: hidden;
     overflow: scroll;
-    margin-bottom: 25vh;
   }
-  /*
-  ${(props) =>
-    props.width < 1100
-      ? css`
-          flex-direction: column;
-          align-items: center;
-          overflow-y: auto;
-          margin-bottom: 50vh;
-          padding: 0 40px;
-          padding-top: 5vh;
-        `
-      : css`
-          flex-direction: row;
-          top: 10vh;
-          padding: 10vh 30px 0px 30px;
-          align-items: flex-start;
-        `}
-*/
+
   ${(props) =>
     props.isdarkmode
       ? css`
@@ -79,7 +64,7 @@ const Wrapper = styled.div`
     width: 100%;
     height: 80vh;
   }
-  @media only screen and (min-device-width: 768px) and (max-width: 1000px) {
+  @media only screen and (min-device-width: 320px) and (max-width: 1000px) {
     width: 100vw;
     float: left;
     height: auto;

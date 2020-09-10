@@ -9,7 +9,7 @@ const Container = styled.div`
   width: 100%;
   @media only screen and (min-width: 1000px) {
   }
-  @media only screen and (min-device-width: 768px) and (max-width: 1000px) {
+  @media only screen and (min-device-width: 320px) and (max-width: 1000px) {
     justify-content: center;
     left: -75px;
   }
@@ -30,7 +30,7 @@ const Divider = styled.div`
     left: calc(0.045 * 100vw);
     font-size: calc(0.011 * 100vw);
   }
-  @media only screen and (min-device-width: 768px) and (max-width: 1000px) {
+  @media only screen and (min-device-width: 320px) and (max-width: 1000px) {
     top: 5vh;
     left: calc(0.05 * 100vw);
     font-size: calc(0.02 * 100vw);
@@ -52,7 +52,7 @@ const PerspectiveText = styled.div`
     top: 25%;
     left: calc(0.015 * 100vw);
   }
-  @media only screen and (min-device-width: 768px) and (max-width: 1000px) {
+  @media only screen and (min-device-width: 320px) and (max-width: 1000px) {
     top: 10%;
   }
   font-family: Arial;
@@ -74,7 +74,7 @@ const PerspectiveText = styled.div`
   @media only screen and (min-width: 1000px) {
     font-size: calc(0.026 * 100vw);
   }
-  @media only screen and (min-device-width: 768px) and (max-width: 1000px) {
+  @media only screen and (min-device-width: 320px) and (max-width: 1000px) {
     font-size: calc(0.04 * 100vw);
   }
 `;
@@ -83,7 +83,7 @@ const PerspectiveLine = styled.div`
   height: 50px;
   @media only screen and (min-width: 1000px) {
   }
-  @media only screen and (min-device-width: 768px) and (max-width: 1000px) {
+  @media only screen and (min-device-width: 320px) and (max-width: 1000px) {
   }
   overflow: hidden;
   position: relative;

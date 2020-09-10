@@ -12,7 +12,7 @@ const Container = styled.div`
   @media only screen and (min-width: 1000px) {
     font-size: calc(0.016 * 100vw);
   }
-  @media only screen and (min-device-width: 768px) and (max-width: 1000px) {
+  @media only screen and (min-device-width: 320px) and (max-width: 1000px) {
     display: flex;
     justify-content: center;
     font-size: calc(0.025 * 100vw);

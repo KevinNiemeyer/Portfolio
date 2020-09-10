@@ -10,7 +10,7 @@ const Container = styled.div`
     text-align: left;
     top: 15vh;
   }
-  @media only screen and (min-device-width: 768px) and (max-width: 1000px) {
+  @media only screen and (min-device-width: 320px) and (max-width: 1000px) {
     width: 100%;
     text-align: center;
   }
@@ -26,7 +26,7 @@ const Heading = styled.h1`
       props.isHomeHeader ? css`calc(.18 * 33vw)` : css`calc(.10 * 33vw)`};
     text-align: left;
   }
-  @media only screen and (min-device-width: 768px) and (max-width: 1000px) {
+  @media only screen and (min-device-width: 320px) and (max-width: 1000px) {
     font-size: ${(props) =>
       props.isHomeHeader ? css`calc(.3 * 33vw)` : css`calc(.10 * 33vw)`};
     text-align: center;
@@ -75,7 +75,7 @@ const Subheading = styled.h3`
     font-size: calc(0.05 * 33vw);
     text-align: right;
   }
-  @media only screen and (min-device-width: 768px) and (max-width: 1000px) {
+  @media only screen and (min-device-width: 320px) and (max-width: 1000px) {
     font-size: calc(0.08 * 33vw);
     text-align: center;
   }
