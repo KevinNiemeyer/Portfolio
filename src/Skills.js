@@ -4,19 +4,19 @@ import { DarkModeContext } from './App';
 import './App.css';
 
 const Container = styled.div`
-  display: flex;
-  justify-content: flex-end;
-  align-items: flex-start;
-  margin-top: 15%;
+  display: grid;
 
-  @media only screen and (min-width: 1224px) {
+  @media only screen and (min-width: 1000px) {
+    margin-top: 15%;
   }
   @media only screen and (min-device-width: 768px) and (max-width: 1000px) {
+    grid-template-columns: auto auto auto auto auto auto auto auto auto auto;
     width: 100%;
   }
 `;
 
 const Divider = styled.div`
+  grid-column: 4 / span 1;
   width: 35px;
   font-size: calc(0.035 * 33vw);
   height: 100%;
@@ -31,6 +31,7 @@ const Divider = styled.div`
 `;
 
 const PerspectiveText = styled.div`
+  grid-column: 5 / span 1;
   ${(props) =>
     props.isdarkmode
       ? css`
@@ -40,7 +41,14 @@ const PerspectiveText = styled.div`
           color: #cccccc;
         `}
   font-family: Arial;
-  font-size: calc(0.08 * 33vw);
+  font-size: 40px;
+
+  @media only screen and (min-width: 1000px) {
+    font-size: calc(0.026 * 100vw);
+  }
+  @media only screen and (min-device-width: 768px) and (max-width: 1000px) {
+    font-size: calc(0.04 * 100vw);
+  }
   font-weight: 900;
   letter-spacing: -2px;
   text-transform: uppercase;
@@ -50,7 +58,12 @@ const PerspectiveText = styled.div`
 `;
 
 const PerspectiveLine = styled.div`
-  height: 50px;
+  @media only screen and (min-width: 1000px) {
+    height: 50px;
+  }
+  @media only screen and (min-device-width: 768px) and (max-width: 1000px) {
+    height: 50px;
+  }
   overflow: hidden;
   position: relative;
   &:nth-child(odd) {

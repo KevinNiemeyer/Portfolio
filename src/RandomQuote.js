@@ -87,11 +87,11 @@ const RandomQuote = (props) => {
   };
   useEffect(() => {
     try {
-      getData();
+      //getData();
     } catch (e) {}
     const interval = setInterval(() => {
       try {
-        getData();
+        //getData();
       } catch (e) {}
     }, 10000);
     return () => clearInterval(interval);
