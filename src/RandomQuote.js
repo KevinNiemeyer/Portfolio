@@ -6,8 +6,18 @@ import './App.css';
 import axios from 'axios';
 
 const Container = styled.div`
+  position: relative;
   width: 100%;
-  font-size: calc(0.05 * 33vw);
+  top: 20%;
+  @media only screen and (min-width: 1000px) {
+    font-size: calc(0.016 * 100vw);
+  }
+  @media only screen and (min-device-width: 768px) and (max-width: 1000px) {
+    display: flex;
+    justify-content: center;
+    font-size: calc(0.025 * 100vw);
+    padding: 25px calc(0.05 * 100vw);
+  }
 `;
 
 const Blockquote = styled.blockquote`
@@ -87,7 +97,7 @@ const RandomQuote = (props) => {
   };
   useEffect(() => {
     try {
-      //getData();
+      getData();
     } catch (e) {}
     const interval = setInterval(() => {
       try {

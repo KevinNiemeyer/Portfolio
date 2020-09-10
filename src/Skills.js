@@ -4,36 +4,58 @@ import { DarkModeContext } from './App';
 import './App.css';
 
 const Container = styled.div`
+  position: relative;
   display: flex;
+  width: 100%;
   @media only screen and (min-width: 1000px) {
   }
   @media only screen and (min-device-width: 768px) and (max-width: 1000px) {
-    grid-template-columns: auto auto auto auto auto auto auto auto auto auto;
-    width: 100%;
+    justify-content: center;
+    left: -75px;
   }
 `;
 
 const Divider = styled.div`
   position: relative;
-  top: 20%;
-  left: calc(0.04 * 100vw);
-  font-size: calc(0.011 * 100vw);
   font-family: 'Orbitron', sans-serif;
-  letter-spacing: 20px;
   font-weight: bold;
-  color: darkgrey;
   height: 50vh;
   writing-mode: vertical-rl;
   text-orientation: upright;
   text-align: center;
+  letter-spacing: calc(0.02 * 100vw);
+  top: 20vh;
+
+  @media only screen and (min-width: 1000px) {
+    left: calc(0.045 * 100vw);
+    font-size: calc(0.011 * 100vw);
+  }
+  @media only screen and (min-device-width: 768px) and (max-width: 1000px) {
+    top: 5vh;
+    left: calc(0.05 * 100vw);
+    font-size: calc(0.02 * 100vw);
+  }
+  ${(props) =>
+    props.isdarkmode
+      ? css`
+          color: #aaaaaa;
+        `
+      : css`
+          color: #252525;
+        `}
 `;
 
 const PerspectiveText = styled.div`
   position: relative;
-  top: 25%;
-  left: 20px;
-  font-family: Arial;
   font-size: 40px;
+  @media only screen and (min-width: 1000px) {
+    top: 25%;
+    left: calc(0.015 * 100vw);
+  }
+  @media only screen and (min-device-width: 768px) and (max-width: 1000px) {
+    top: 10%;
+  }
+  font-family: Arial;
   font-weight: 900;
   letter-spacing: -2px;
   text-transform: uppercase;
@@ -121,7 +143,7 @@ function Skills(props) {
       {(value) => {
         return (
           <Container>
-            <Divider>Skills</Divider>
+            <Divider isdarkmode={value.isDarkMode}>Skills</Divider>
             <PerspectiveText isdarkmode={value.isDarkMode}>
               <PerspectiveLine isdarkmode={value.isDarkMode}>
                 <P />
