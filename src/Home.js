@@ -36,7 +36,7 @@ const Container = styled.div`
   top: 60px;
   @media only screen and (min-width: 1000px) {
     flex-direction: row;
-    padding: 20vh 30px 0px 30px;
+    padding: 0 30px 100px; 30px;
     align-items: flex-start;
   }
   @media only screen and (min-device-width: 768px) and (max-width: 1000px) {

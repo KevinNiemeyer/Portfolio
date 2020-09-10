@@ -4,10 +4,8 @@ import { DarkModeContext } from './App';
 import './App.css';
 
 const Container = styled.div`
-  display: grid;
-
+  display: flex;
   @media only screen and (min-width: 1000px) {
-    margin-top: 15%;
   }
   @media only screen and (min-device-width: 768px) and (max-width: 1000px) {
     grid-template-columns: auto auto auto auto auto auto auto auto auto auto;
@@ -16,22 +14,32 @@ const Container = styled.div`
 `;
 
 const Divider = styled.div`
-  grid-column: 4 / span 1;
-  width: 35px;
-  font-size: calc(0.035 * 33vw);
-  height: 100%;
-  display: flex;
-  margin-right: calc(0.005 * 100vw);
-  align-items: center;
-  height: calc(80vh / 2);
+  position: relative;
+  top: 20%;
+  left: calc(0.04 * 100vw);
+  font-size: calc(0.011 * 100vw);
   font-family: 'Orbitron', sans-serif;
-  letter-spacing: 10px;
+  letter-spacing: 20px;
   font-weight: bold;
   color: darkgrey;
+  height: 50vh;
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+  text-align: center;
 `;
 
 const PerspectiveText = styled.div`
-  grid-column: 5 / span 1;
+  position: relative;
+  top: 25%;
+  left: 20px;
+  font-family: Arial;
+  font-size: 40px;
+  font-weight: 900;
+  letter-spacing: -2px;
+  text-transform: uppercase;
+  &:hover p {
+    transform: translate(0, -50px);
+  }
   ${(props) =>
     props.isdarkmode
       ? css`
@@ -40,8 +48,6 @@ const PerspectiveText = styled.div`
       : css`
           color: #cccccc;
         `}
-  font-family: Arial;
-  font-size: 40px;
 
   @media only screen and (min-width: 1000px) {
     font-size: calc(0.026 * 100vw);
@@ -49,20 +55,13 @@ const PerspectiveText = styled.div`
   @media only screen and (min-device-width: 768px) and (max-width: 1000px) {
     font-size: calc(0.04 * 100vw);
   }
-  font-weight: 900;
-  letter-spacing: -2px;
-  text-transform: uppercase;
-  &:hover p {
-    transform: translate(0, -50px);
-  }
 `;
 
 const PerspectiveLine = styled.div`
+  height: 50px;
   @media only screen and (min-width: 1000px) {
-    height: 50px;
   }
   @media only screen and (min-device-width: 768px) and (max-width: 1000px) {
-    height: 50px;
   }
   overflow: hidden;
   position: relative;
@@ -116,21 +115,13 @@ const P = styled.p`
   transition: transform 0.5s ease-in-out;
 `;
 
-const rotated = {
-  height: '10px',
-  transformOrigin: 'center',
-  transform: 'rotate(-90deg)',
-};
-
 function Skills(props) {
   return (
     <DarkModeContext.Consumer>
       {(value) => {
         return (
           <Container>
-            <Divider>
-              <div style={rotated}>Skills:</div>
-            </Divider>
+            <Divider>Skills</Divider>
             <PerspectiveText isdarkmode={value.isDarkMode}>
               <PerspectiveLine isdarkmode={value.isDarkMode}>
                 <P />
